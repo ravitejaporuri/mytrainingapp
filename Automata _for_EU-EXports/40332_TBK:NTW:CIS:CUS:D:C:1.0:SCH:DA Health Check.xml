@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<automatonExport>
+    <automaton>
+        <approvalNotes>Devops:https://hub.jazz.net/ccm06/resource/itemName/com.ibm.team.workitem.WorkItem/35570</approvalNotes>
+        <approvalStatus>APPROVED</approvalStatus>
+        <automaticDelaySeconds>60</automaticDelaySeconds>
+        <created>2016-12-12T08:37:18Z</created>
+        <Category>
+            <categoryID>1287</categoryID>
+            <clientID>33</clientID>
+            <name>Diagnosis</name>
+            <parent>
+                <categoryID>1285</categoryID>
+                <clientID>33</clientID>
+                <name>Components</name>
+                <parent>
+                    <categoryID>377</categoryID>
+                    <clientID>33</clientID>
+                    <name>Network Management</name>
+                </parent>
+            </parent>
+        </Category>
+        <automatonID>40332</automatonID>
+        <executionMode>MANUAL</executionMode>
+        <isLive>true</isLive>
+        <isMasterTicketOnly>true</isMasterTicketOnly>
+        <matchType>AND</matchType>
+        <modified>2017-01-06T07:06:18Z</modified>
+        <name>TBK:NTW:CIS:CUS:D:C:1.0:SCH:DA Health Check</name>
+        <purpose>DIAGNOSIS</purpose>
+        <newExecutionThrottleCount>0</newExecutionThrottleCount>
+        <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+        <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+        <engineerTimeToRemediate>0</engineerTimeToRemediate>
+        <ConstantVariables>
+            <ConstantVariable>
+                <automatonID>40332</automatonID>
+                <name>affected_host</name>
+                <secure>false</secure>
+                <variableID>459736</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>40332</automatonID>
+                <name>component_output</name>
+                <secure>false</secure>
+                <variableID>459735</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+        </ConstantVariables>
+        <FormVariables/>
+        <RegexExtractVariables>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <name>SN_cmdb</name>
+                <secure>false</secure>
+                <variableID>459734</variableID>
+                <actionID>611634</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <defaultValue>n/a</defaultValue>
+                <name>SN_out</name>
+                <secure>false</secure>
+                <variableID>459731</variableID>
+                <actionID>611630</actionID>
+                <field>OUT</field>
+                <filterPattern>.*PID.*</filterPattern>
+                <matchPattern>PID.*SN:\s+(.*)\n.*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <name>total_mins</name>
+                <secure>false</secure>
+                <variableID>459733</variableID>
+                <actionID>611632</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <defaultValue> </defaultValue>
+                <name>affected_hostname</name>
+                <secure>false</secure>
+                <variableID>459730</variableID>
+                <actionID>611629</actionID>
+                <field>OUT</field>
+                <filterPattern>.*(\Q#\E|\Q&gt;\E|\Q$\E)</filterPattern>
+                <matchPattern>\n?(.*)(\Q#\E|\Q&gt;\E|\Q$\E)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <defaultValue>n/a</defaultValue>
+                <name>image_out</name>
+                <secure>false</secure>
+                <variableID>459732</variableID>
+                <actionID>611631</actionID>
+                <field>OUT</field>
+                <filterPattern>(?i).*System image.*</filterPattern>
+                <matchPattern>System image file is ?(.*).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>40332</automatonID>
+                <defaultValue>n/a</defaultValue>
+                <name>uptime_out</name>
+                <secure>false</secure>
+                <variableID>459729</variableID>
+                <actionID>611629</actionID>
+                <field>OUT</field>
+                <filterPattern>.*uptime is.*</filterPattern>
+            </RegexExtractVariable>
+        </RegexExtractVariables>
+        <RuntimeVariables/>
+        <ScriptExtractVariables/>
+        <Connections>
+            <Connection>
+                <name>affected_host</name>
+                <connectionClientCode>tbk</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.34</connectionHost>
+                <backupConnectionClientCode>tbk</backupConnectionClientCode>
+                <backupConnectionHost>198.18.125.35</backupConnectionHost>
+                <backupConnectionProtocol>SSH</backupConnectionProtocol>
+            </Connection>
+        </Connections>
+        <CMDBAssociateActions/>
+        <CMDBQueryActions>
+            <CMDBQueryAction>
+                <actionID>611634</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>459734</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>735140</stateID>
+                <ciName>tbk_${affected_hostname}.tbk</ciName>
+                <queryActionType>ATTRIBUTE</queryActionType>
+                <queryString>/Serial Number</queryString>
+            </CMDBQueryAction>
+        </CMDBQueryActions>
+        <EditVariableActions>
+            <EditVariableAction>
+                <actionID>611633</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>735141</stateID>
+                <refresh>false</refresh>
+                <EditVariableTransforms>
+                    <EditVariableTransform>
+                        <arguments/>
+                        <transformMethodID>75</transformMethodID>
+                    </EditVariableTransform>
+                </EditVariableTransforms>
+                <variableID>459730</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>611635</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>735139</stateID>
+                <refresh>false</refresh>
+                <script>var firstLine = SN_out.split('\n', 1)[0];
+SN_out = firstLine;
+
+component_output='&lt;tr&gt;&lt;td&gt;' + affected_host + '&lt;/td&gt;&lt;td&gt;' + affected_hostname + '&lt;/td&gt;&lt;td&gt;' + 'Success' + '&lt;/td&gt;&lt;td&gt;' + SN_cmdb + '&lt;/td&gt;&lt;td&gt;' + SN_out + '&lt;/td&gt;&lt;td&gt;' + image_out + '&lt;/td&gt;&lt;td&gt;' + total_mins + '&lt;/td&gt;&lt;/tr&gt;';
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>459735</variableID>
+            </EditVariableAction>
+        </EditVariableActions>
+        <EmailActions>
+            <EmailAction>
+                <actionID>611627</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>735147</stateID>
+                <body>${component_output}
+${affected_host}</body>
+                <from>@</from>
+                <subject>@</subject>
+                <to>@</to>
+            </EmailAction>
+        </EmailActions>
+        <FormActions/>
+        <HostCommandActions>
+            <HostCommandAction>
+                <actionID>611629</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>459729</RegexExtractVariableID>
+                    <RegexExtractVariableID>459730</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>735145</stateID>
+                <command>show ver | in uptime</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>611631</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>459732</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>735143</stateID>
+                <command>show ver | in image</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>611628</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>735146</stateID>
+                <command>term len 0	</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>611630</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>459731</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>735144</stateID>
+                <command>show inventory | in SN:</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+        </HostCommandActions>
+        <LinkActions/>
+        <LockTicketActions/>
+        <RfcActions/>
+        <ScriptActions>
+            <ScriptAction>
+                <actionID>611632</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>459733</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>735142</stateID>
+                <script>var years = '0';
+var weeks = '0';
+var days = '0';
+var hours = '0';
+var mins = '0';
+var years_in_mins = '0';
+var weeks_in_mins = '0';
+var days_in_mins = '0';
+var hours_in_mins = '0';
+var total_mins = '0';
+
+if ( uptime_out.match(/\d+ years/gi) ) {
+    years = uptime_out.replace(/.*\D+(\d+) years.*/ig,'$1');
+}
+if ( uptime_out.match(/\d+ weeks/gi) ) {
+    days = uptime_out.replace(/.*\D+(\d+) weeks.*/ig,'$1');
+}
+if ( uptime_out.match(/\d+ days/gi) ) {
+    weeks = uptime_out.replace(/.*\D+(\d+) days.*/ig,'$1');
+}
+if ( uptime_out.match(/\d+ hours/gi) ) {
+    hours = uptime_out.replace(/.*\D+(\d+) hours.*/ig,'$1');
+}
+if ( uptime_out.match(/\d+ minutes/gi) ) {
+    mins = uptime_out.replace(/.*\D+(\d+) minutes.*/ig,'$1');
+}
+var years_in_mins = years * 365 * 24 * 60;
+var weeks_in_mins = weeks * 7 * 24 * 60;
+var days_in_mins = days * 24 * 60;
+var hours_in_mins = hours * 60;
+/*var a = years_in_mins.trim();
+var b = weeks_in_mins.trim();
+var c = days_in_mins.trim();
+var d = hours_in_mins.trim();
+var e = '0';
+*///var total_mins = years_in_mins + weeks_in_mins + days_in_mins + hours_in_mins + mins;
+//e = a + b + c + d + mins;
+//total_mins = e.trim();
+var total_mins = years_in_mins + weeks_in_mins + days_in_mins + hours_in_mins + mins;
+total_mins;</script>
+            </ScriptAction>
+        </ScriptActions>
+        <WaitForRecoveryIPmonActions/>
+        <GenericTicketEventWaitActions/>
+        <AckProblemIPmonActions/>
+        <CancelDowntimeIPmonActions/>
+        <ExecuteCheckIPmonActions/>
+        <ScheduleDowntimeIPmonActions/>
+        <PhoneCallActions/>
+        <TimedWaitActions/>
+        <UpdateTicketActions/>
+        <SubmitPassiveIPmonActionDetails/>
+        <HttpRequestActions/>
+        <IPdiscoverActions/>
+        <ExecuteIPadminActions/>
+        <SQLCommandActions/>
+        <NotifyActions/>
+        <ForkStates/>
+        <FormStates/>
+        <JoinStates/>
+        <LinkStates/>
+        <NoopStates/>
+        <NormalStates>
+            <NormalState>
+                <actionID>611629</actionID>
+                <name>show ver | in uptime</name>
+                <originalID>713063</originalID>
+                <stateID>735145</stateID>
+                <XPos>202</XPos>
+                <YPos>213</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611632</actionID>
+                <name>uptime_mins</name>
+                <originalID>713060</originalID>
+                <stateID>735142</stateID>
+                <XPos>547</XPos>
+                <YPos>352</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611631</actionID>
+                <name>show ver | in image</name>
+                <originalID>713061</originalID>
+                <stateID>735143</stateID>
+                <XPos>546</XPos>
+                <YPos>213</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611634</actionID>
+                <name>IPcmdb - Query CIs</name>
+                <originalID>713314</originalID>
+                <stateID>735140</stateID>
+                <XPos>207</XPos>
+                <YPos>352</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611633</actionID>
+                <name>trim hostname</name>
+                <originalID>713477</originalID>
+                <stateID>735141</stateID>
+                <XPos>405</XPos>
+                <YPos>352</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611627</actionID>
+                <name>Declare Vars</name>
+                <originalID>713278</originalID>
+                <stateID>735147</stateID>
+                <XPos>334</XPos>
+                <YPos>93</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611628</actionID>
+                <name>term len 0</name>
+                <originalID>715533</originalID>
+                <stateID>735146</stateID>
+                <XPos>202</XPos>
+                <YPos>94</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611630</actionID>
+                <name>show inventory | in SN:</name>
+                <originalID>713062</originalID>
+                <stateID>735144</stateID>
+                <XPos>383</XPos>
+                <YPos>214</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>611635</actionID>
+                <name>set component_output</name>
+                <originalID>713279</originalID>
+                <stateID>735139</stateID>
+                <XPos>205</XPos>
+                <YPos>452</YPos>
+            </NormalState>
+        </NormalStates>
+        <SuccessStates>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>713059</originalID>
+                <stateID>735138</stateID>
+                <XPos>208</XPos>
+                <YPos>562</YPos>
+            </SuccessState>
+        </SuccessStates>
+        <WaitStates/>
+        <Transitions>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>true</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>225,93:235,93:235,93:235,93:302,93:312,93</connectorLayout>
+                <fromStateID>735146</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>never</name>
+                <toStateID>735147</toStateID>
+                <transitionID>826216</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>225,213:235,213:235,214:235,214:351,214:361,214</connectorLayout>
+                <fromStateID>735145</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735144</toStateID>
+                <transitionID>826218</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <expression></expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>207,368:207,378:205,378:205,378:205,427:205,437</connectorLayout>
+                <fromStateID>735140</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735139</toStateID>
+                <transitionID>826223</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,214:416,214:416,213:416,213:514,213:524,213</connectorLayout>
+                <fromStateID>735144</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735143</toStateID>
+                <transitionID>826219</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>205,468:205,478:208,478:208,478:208,536:208,546</connectorLayout>
+                <fromStateID>735139</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735138</toStateID>
+                <transitionID>826224</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>525,352:515,352:515,352:515,352:437,352:427,352</connectorLayout>
+                <fromStateID>735142</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735141</toStateID>
+                <transitionID>826221</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>546,229:546,239:547,239:547,239:547,327:547,337</connectorLayout>
+                <fromStateID>735143</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735142</toStateID>
+                <transitionID>826220</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>383,352:373,352:373,352:373,352:239,352:229,352</connectorLayout>
+                <fromStateID>735141</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735140</toStateID>
+                <transitionID>826222</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>202,109:202,119:202,119:202,119:202,187:202,197</connectorLayout>
+                <fromStateID>735146</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>735145</toStateID>
+                <transitionID>826217</transitionID>
+            </Transition>
+        </Transitions>
+        <TicketMatchers/>
+        <Tags/>
+    </automaton>
+    <timeOfExport>2017-06-28T07:33:32.118Z</timeOfExport>
+</automatonExport>

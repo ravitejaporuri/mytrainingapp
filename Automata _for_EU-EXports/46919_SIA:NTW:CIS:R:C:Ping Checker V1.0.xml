@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<automatonExport>
+    <automaton>
+        <approvalNotes>Defect Devops:14729&#xD;
+Reason:Code enhancement required as the Primary JB will be made down soon and only backup JB will work.&#xD;
+Date:27April2017&#xD;
+&#xD;
+Old Devops:&#xD;
+Update2-23Mar16-updated transition to always from dig command states.&#xD;
+Update2-Devops:https://hub.jazz.net/ccm06/resource/itemName/com.ibm.team.workitem.WorkItem/32213&#xD;
+Update1:Added Remediation with validation code.&#xD;
+Implementation Devops:https://hub.jazz.net/ccm06/resource/itemName/com.ibm.team.workitem.WorkItem/32170</approvalNotes>
+        <approvalStatus>APPROVED</approvalStatus>
+        <automaticDelaySeconds>60</automaticDelaySeconds>
+        <created>2016-02-23T07:08:57Z</created>
+        <Category>
+            <categoryID>1415</categoryID>
+            <clientID>21</clientID>
+            <name>Remediation</name>
+            <parent>
+                <categoryID>1350</categoryID>
+                <clientID>21</clientID>
+                <name>Components</name>
+                <parent>
+                    <categoryID>47</categoryID>
+                    <clientID>21</clientID>
+                    <name>Network Management</name>
+                </parent>
+            </parent>
+        </Category>
+        <automatonID>46919</automatonID>
+        <executionMode>MANUAL</executionMode>
+        <isLive>true</isLive>
+        <isMasterTicketOnly>true</isMasterTicketOnly>
+        <matchType>AND</matchType>
+        <modified>2017-05-02T06:29:48Z</modified>
+        <name>SIA:NTW:CIS:R:C:Ping Checker V1.0</name>
+        <purpose>REMEDIATION</purpose>
+        <newExecutionThrottleCount>0</newExecutionThrottleCount>
+        <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+        <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+        <engineerTimeToRemediate>0</engineerTimeToRemediate>
+        <ConstantVariables>
+            <ConstantVariable>
+                <automatonID>46919</automatonID>
+                <name>component_output</name>
+                <secure>false</secure>
+                <variableID>577797</variableID>
+                <value>&lt;![CDATA[ ]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>46919</automatonID>
+                <name>affected_host</name>
+                <secure>false</secure>
+                <variableID>577803</variableID>
+                <value>&lt;![CDATA[198.18.125.64]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>46919</automatonID>
+                <name>args</name>
+                <secure>false</secure>
+                <variableID>577800</variableID>
+                <value>&lt;![CDATA[{}]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>46919</automatonID>
+                <name>flag</name>
+                <secure>false</secure>
+                <variableID>577799</variableID>
+                <value>&lt;![CDATA[0]]&gt;</value>
+            </ConstantVariable>
+        </ConstantVariables>
+        <FormVariables/>
+        <RegexExtractVariables>
+            <RegexExtractVariable>
+                <automatonID>46919</automatonID>
+                <name>ping_output_secondary</name>
+                <secure>false</secure>
+                <variableID>577798</variableID>
+                <actionID>752550</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>46919</automatonID>
+                <name>ping_output_primary</name>
+                <secure>false</secure>
+                <variableID>577796</variableID>
+                <actionID>752548</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>46919</automatonID>
+                <name>dig_output_primary</name>
+                <secure>false</secure>
+                <variableID>577801</variableID>
+                <actionID>752561</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>46919</automatonID>
+                <name>dig_output_secondary</name>
+                <secure>false</secure>
+                <variableID>577802</variableID>
+                <actionID>752564</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+        </RegexExtractVariables>
+        <RuntimeVariables/>
+        <ScriptExtractVariables/>
+        <Connections>
+            <Connection>
+                <name>affected_host1</name>
+                <connectionName>sia_jb_conn1_of_2</connectionName>
+                <connectionClientCode>sia</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.9</connectionHost>
+            </Connection>
+            <Connection>
+                <name>affected_host2</name>
+                <connectionName>sia_jb_conn2_of_2</connectionName>
+                <connectionClientCode>sia</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.64</connectionHost>
+            </Connection>
+        </Connections>
+        <CMDBAssociateActions/>
+        <CMDBQueryActions/>
+        <EditVariableActions>
+            <EditVariableAction>
+                <actionID>752560</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897416</stateID>
+                <refresh>false</refresh>
+                <script>component_output="Ping from Primary jumphost success to affected_host: " + affected_host + "\n";
+component_output+="\nDig command output:\n"+dig_output_primary+"\n";
+component_output+="\nPing command output:\n"+ping_output_primary+"\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752557</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897420</stateID>
+                <refresh>false</refresh>
+                <script>component_output+="\n-----------------------------------------------------------------------\n";
+component_output+="Ping from Secondary jumphost failed for affected_host: " + affected_host + "\n";
+component_output+="Dig command output:\n"+dig_output_secondary+"\n";
+component_output+="Ping command output:\n"+ping_output_secondary+"\n";
+component_output;
+</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752551</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897419</stateID>
+                <refresh>false</refresh>
+                <script>component_output+="\n-----------------------------------------------------------------------\n";
+component_output+="Ping from Secondary jumphost is success for affected_host: " + affected_host + "\n";
+component_output+="Dig command output:\n"+dig_output_secondary+"\n";
+component_output+="Ping command output:\n"+ping_output_secondary+"\n";
+component_output;
+</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752553</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897426</stateID>
+                <refresh>false</refresh>
+                <script>component_output+="Unable to connect to JB2 (198.18.125.64). Hence escalating.\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752554</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897425</stateID>
+                <refresh>false</refresh>
+                <script>if(typeof JSON!=="object"){JSON={}}(function(){"use strict";function f(e){return e&lt;10?"0"+e:e}function quote(e){escapable.lastIndex=0;return escapable.test(e)?'"'+e.replace(escapable,function(e){var t=meta[e];return typeof t==="string"?t:"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})+'"':'"'+e+'"'}function str(e,t){var n,r,i,s,o=gap,u,a=t[e];if(a&amp;&amp;typeof a==="object"&amp;&amp;typeof a.toJSON==="function"){a=a.toJSON(e)}if(typeof rep==="function"){a=rep.call(t,e,a)}switch(typeof a){case"string":return quote(a);case"number":return isFinite(a)?String(a):"null";case"boolean":case"null":return String(a);case"object":if(!a){return"null"}gap+=indent;u=[];if(Object.prototype.toString.apply(a)==="[object Array]"){s=a.length;for(n=0;n&lt;s;n+=1){u[n]=str(n,a)||"null"}i=u.length===0?"[]":gap?"[\n"+gap+u.join(",\n"+gap)+"\n"+o+"]":"["+u.join(",")+"]";gap=o;return i}if(rep&amp;&amp;typeof rep==="object"){s=rep.length;for(n=0;n&lt;s;n+=1){if(typeof rep[n]==="string"){r=rep[n];i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}else{for(r in a){if(Object.prototype.hasOwnProperty.call(a,r)){i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}i=u.length===0?"{}":gap?"{\n"+gap+u.join(",\n"+gap)+"\n"+o+"}":"{"+u.join(",")+"}";gap=o;return i}}if(typeof Date.prototype.toJSON!=="function"){Date.prototype.toJSON=function(){return isFinite(this.valueOf())?this.getUTCFullYear()+"-"+f(this.getUTCMonth()+1)+"-"+f(this.getUTCDate())+"T"+f(this.getUTCHours())+":"+f(this.getUTCMinutes())+":"+f(this.getUTCSeconds())+"Z":null};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(){return this.valueOf()}}var cx,escapable,gap,indent,meta,rep;if(typeof JSON.stringify!=="function"){escapable=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;meta={"\b":"\\b","  ":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"};JSON.stringify=function(e,t,n){var r;gap="";indent="";if(typeof n==="number"){for(r=0;r&lt;n;r+=1){indent+=" "}}else if(typeof n==="string"){indent=n}rep=t;if(t&amp;&amp;typeof t!=="function"&amp;&amp;(typeof t!=="object"||typeof t.length!=="number")){throw new Error("JSON.stringify")}return str("",{"":e})}}if(typeof JSON.parse!=="function"){cx=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;JSON.parse=function(text,reviver){function walk(e,t){var n,r,i=e[t];if(i&amp;&amp;typeof i==="object"){for(n in i){if(Object.prototype.hasOwnProperty.call(i,n)){r=walk(i,n);if(r!==undefined){i[n]=r}else{delete i[n]}}}}return reviver.call(e,t,i)}var j;text=String(text);cx.lastIndex=0;if(cx.test(text)){text=text.replace(cx,function(e){return"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})}if(/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,"@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,"]").replace(/(?:^|:|,)(?:\s*\[)+/g,""))){j=eval("("+text+")");return typeof reviver==="function"?walk({"":j},""):j}throw new SyntaxError("JSON.parse")}}})()
+
+//convert string to JSON object(hash)
+args=JSON.parse(args);
+args["closure_code"]="Escalation";
+args=JSON.stringify(args);</script>
+                <EditVariableTransforms/>
+                <variableID>577800</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752558</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897418</stateID>
+                <refresh>false</refresh>
+                <script>if(typeof JSON!=="object"){JSON={}}(function(){"use strict";function f(e){return e&lt;10?"0"+e:e}function quote(e){escapable.lastIndex=0;return escapable.test(e)?'"'+e.replace(escapable,function(e){var t=meta[e];return typeof t==="string"?t:"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})+'"':'"'+e+'"'}function str(e,t){var n,r,i,s,o=gap,u,a=t[e];if(a&amp;&amp;typeof a==="object"&amp;&amp;typeof a.toJSON==="function"){a=a.toJSON(e)}if(typeof rep==="function"){a=rep.call(t,e,a)}switch(typeof a){case"string":return quote(a);case"number":return isFinite(a)?String(a):"null";case"boolean":case"null":return String(a);case"object":if(!a){return"null"}gap+=indent;u=[];if(Object.prototype.toString.apply(a)==="[object Array]"){s=a.length;for(n=0;n&lt;s;n+=1){u[n]=str(n,a)||"null"}i=u.length===0?"[]":gap?"[\n"+gap+u.join(",\n"+gap)+"\n"+o+"]":"["+u.join(",")+"]";gap=o;return i}if(rep&amp;&amp;typeof rep==="object"){s=rep.length;for(n=0;n&lt;s;n+=1){if(typeof rep[n]==="string"){r=rep[n];i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}else{for(r in a){if(Object.prototype.hasOwnProperty.call(a,r)){i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}i=u.length===0?"{}":gap?"{\n"+gap+u.join(",\n"+gap)+"\n"+o+"}":"{"+u.join(",")+"}";gap=o;return i}}if(typeof Date.prototype.toJSON!=="function"){Date.prototype.toJSON=function(){return isFinite(this.valueOf())?this.getUTCFullYear()+"-"+f(this.getUTCMonth()+1)+"-"+f(this.getUTCDate())+"T"+f(this.getUTCHours())+":"+f(this.getUTCMinutes())+":"+f(this.getUTCSeconds())+"Z":null};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(){return this.valueOf()}}var cx,escapable,gap,indent,meta,rep;if(typeof JSON.stringify!=="function"){escapable=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;meta={"\b":"\\b","  ":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"};JSON.stringify=function(e,t,n){var r;gap="";indent="";if(typeof n==="number"){for(r=0;r&lt;n;r+=1){indent+=" "}}else if(typeof n==="string"){indent=n}rep=t;if(t&amp;&amp;typeof t!=="function"&amp;&amp;(typeof t!=="object"||typeof t.length!=="number")){throw new Error("JSON.stringify")}return str("",{"":e})}}if(typeof JSON.parse!=="function"){cx=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;JSON.parse=function(text,reviver){function walk(e,t){var n,r,i=e[t];if(i&amp;&amp;typeof i==="object"){for(n in i){if(Object.prototype.hasOwnProperty.call(i,n)){r=walk(i,n);if(r!==undefined){i[n]=r}else{delete i[n]}}}}return reviver.call(e,t,i)}var j;text=String(text);cx.lastIndex=0;if(cx.test(text)){text=text.replace(cx,function(e){return"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})}if(/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,"@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,"]").replace(/(?:^|:|,)(?:\s*\[)+/g,""))){j=eval("("+text+")");return typeof reviver==="function"?walk({"":j},""):j}throw new SyntaxError("JSON.parse")}}})()
+
+//convert string to JSON object(hash)
+args=JSON.parse(args);
+args["closure_code"]="Remediation with Validation Closure";
+args=JSON.stringify(args);</script>
+                <EditVariableTransforms/>
+                <variableID>577800</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752559</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897417</stateID>
+                <refresh>false</refresh>
+                <script>var flag = 1;
+flag;</script>
+                <EditVariableTransforms/>
+                <variableID>577799</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752549</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897415</stateID>
+                <refresh>false</refresh>
+                <script>component_output="Ping from Primary jumphost failed to affected_host: " + affected_host + "\n";
+component_output+="Dig command output:\n"+dig_output_primary+"\n";
+component_output+="Ping command output:\n"+ping_output_primary+"\n";
+component_output;
+</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>752563</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897410</stateID>
+                <refresh>false</refresh>
+                <script>component_output="Unable to connect to JB1 (198.18.125.9). Hence proceeding with the 2nd JB.\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>577797</variableID>
+            </EditVariableAction>
+        </EditVariableActions>
+        <EmailActions>
+            <EmailAction>
+                <actionID>752547</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897412</stateID>
+                <body>${component_output}
+${flag}
+${args}</body>
+                <from>@</from>
+                <subject>@</subject>
+                <to>@</to>
+            </EmailAction>
+        </EmailActions>
+        <FormActions/>
+        <HostCommandActions>
+            <HostCommandAction>
+                <actionID>752548</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>577796</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>897414</stateID>
+                <command>ping -c 10 -w 5000 ${affected_host}</command>
+                <connectionName>affected_host1</connectionName>
+                <hardTimeoutSeconds>360</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>752564</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>577802</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>897409</stateID>
+                <command>dig +short -x ${affected_host}</command>
+                <connectionName>affected_host2</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>752550</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>577798</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>897408</stateID>
+                <command>ping -c 10 -w 5000 ${affected_host}</command>
+                <connectionName>affected_host2</connectionName>
+                <hardTimeoutSeconds>360</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>752561</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>577801</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>897413</stateID>
+                <command>dig +short -x ${affected_host}</command>
+                <connectionName>affected_host1</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>752562</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897411</stateID>
+                <command>hostname</command>
+                <connectionName>affected_host1</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+        </HostCommandActions>
+        <LinkActions/>
+        <LockTicketActions/>
+        <RfcActions/>
+        <ScriptActions>
+            <ScriptAction>
+                <actionID>752556</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897421</stateID>
+                <script>var old = execution.getPurpose();
+execution.setPurpose("DIAGNOSIS");
+"Changed Execution Purpose from " + old + " to " + execution.getPurpose();
+</script>
+            </ScriptAction>
+            <ScriptAction>
+                <actionID>752552</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897423</stateID>
+                <script>var old = execution.getPurpose();
+execution.setPurpose("REMEDIATION");
+"Changed Execution Purpose from " + old + " to " + execution.getPurpose();
+</script>
+            </ScriptAction>
+            <ScriptAction>
+                <actionID>752555</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>897424</stateID>
+                <script>var old = execution.getPurpose();
+execution.setPurpose("ESCALATION");
+"Changed Execution Purpose from " + old + " to " + execution.getPurpose();
+</script>
+            </ScriptAction>
+        </ScriptActions>
+        <WaitForRecoveryIPmonActions/>
+        <GenericTicketEventWaitActions/>
+        <AckProblemIPmonActions/>
+        <CancelDowntimeIPmonActions/>
+        <ExecuteCheckIPmonActions/>
+        <ScheduleDowntimeIPmonActions/>
+        <PhoneCallActions/>
+        <TimedWaitActions/>
+        <UpdateTicketActions/>
+        <SubmitPassiveIPmonActionDetails/>
+        <HttpRequestActions/>
+        <IPdiscoverActions/>
+        <ExecuteIPadminActions/>
+        <SQLCommandActions/>
+        <NotifyActions/>
+        <ForkStates/>
+        <FormStates/>
+        <JoinStates/>
+        <LinkStates/>
+        <NoopStates/>
+        <NormalStates>
+            <NormalState>
+                <actionID>752556</actionID>
+                <name>Switch Purpose to Diagnosis</name>
+                <originalID>28948</originalID>
+                <stateID>897421</stateID>
+                <XPos>910</XPos>
+                <YPos>601</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752552</actionID>
+                <name>Switch Purpose to Remediation</name>
+                <originalID>28948</originalID>
+                <stateID>897423</stateID>
+                <XPos>739</XPos>
+                <YPos>334</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752555</actionID>
+                <name>Switch Purpose to ESCALATION</name>
+                <originalID>28948</originalID>
+                <stateID>897424</stateID>
+                <XPos>1087</XPos>
+                <YPos>722</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752548</actionID>
+                <name>ping command</name>
+                <originalID>368087</originalID>
+                <stateID>897414</stateID>
+                <XPos>195</XPos>
+                <YPos>351</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752560</actionID>
+                <name>Set component output</name>
+                <originalID>368088</originalID>
+                <stateID>897416</stateID>
+                <XPos>415</XPos>
+                <YPos>351</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752557</actionID>
+                <name>Set component output</name>
+                <originalID>368092</originalID>
+                <stateID>897420</stateID>
+                <XPos>674</XPos>
+                <YPos>599</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752551</actionID>
+                <name>Set component output</name>
+                <originalID>368092</originalID>
+                <stateID>897419</stateID>
+                <XPos>536</XPos>
+                <YPos>522</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752553</actionID>
+                <name>JB2 not connected</name>
+                <originalID>889965</originalID>
+                <stateID>897426</stateID>
+                <XPos>465</XPos>
+                <YPos>721</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752554</actionID>
+                <name>Escalate closure code setting</name>
+                <originalID>258555</originalID>
+                <stateID>897425</stateID>
+                <XPos>846</XPos>
+                <YPos>721</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752564</actionID>
+                <name>dig command</name>
+                <originalID>368090</originalID>
+                <stateID>897409</stateID>
+                <XPos>196</XPos>
+                <YPos>602</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752558</actionID>
+                <name>remediation closure code setting</name>
+                <originalID>258555</originalID>
+                <stateID>897418</stateID>
+                <XPos>738</XPos>
+                <YPos>447</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752550</actionID>
+                <name>ping command</name>
+                <originalID>368091</originalID>
+                <stateID>897408</stateID>
+                <XPos>376</XPos>
+                <YPos>600</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752561</actionID>
+                <name>dig command</name>
+                <originalID>368086</originalID>
+                <stateID>897413</stateID>
+                <XPos>203</XPos>
+                <YPos>227</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752559</actionID>
+                <name>set flag=1</name>
+                <originalID>374441</originalID>
+                <stateID>897417</stateID>
+                <XPos>416</XPos>
+                <YPos>447</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752562</actionID>
+                <name>Hostname</name>
+                <originalID>368085</originalID>
+                <stateID>897411</stateID>
+                <XPos>205</XPos>
+                <YPos>80</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752549</actionID>
+                <name>Set component output</name>
+                <originalID>368088</originalID>
+                <stateID>897415</stateID>
+                <XPos>195</XPos>
+                <YPos>460</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752563</actionID>
+                <name>JB1 not connected</name>
+                <originalID>889955</originalID>
+                <stateID>897410</stateID>
+                <XPos>50</XPos>
+                <YPos>356</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>752547</actionID>
+                <name>Send Email</name>
+                <originalID>368094</originalID>
+                <stateID>897412</stateID>
+                <XPos>362</XPos>
+                <YPos>80</YPos>
+            </NormalState>
+        </NormalStates>
+        <SuccessStates>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>368258</originalID>
+                <stateID>897422</stateID>
+                <XPos>910</XPos>
+                <YPos>334</YPos>
+            </SuccessState>
+        </SuccessStates>
+        <WaitStates/>
+        <Transitions>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>-503</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>219,602:229,602:277,602:277,721:433,721:443,721</connectorLayout>
+                <fromStateID>897409</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>-503</name>
+                <toStateID>897426</toStateID>
+                <transitionID>1008827</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>195,476:195,486:197,486:197,486:197,576:197,586</connectorLayout>
+                <fromStateID>897415</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897409</toStateID>
+                <transitionID>1008820</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>50,372:50,382:50,563:196,563:196,576:196,586</connectorLayout>
+                <fromStateID>897410</fromStateID>
+                <labelLayout>9:0:1:71</labelLayout>
+                <name>ok</name>
+                <toStateID>897409</toStateID>
+                <transitionID>1008840</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <expression></expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>219,602:229,602:229,600:229,600:344,600:354,600</connectorLayout>
+                <fromStateID>897409</fromStateID>
+                <labelLayout>0:-1:3:70</labelLayout>
+                <name>ok</name>
+                <toStateID>897408</toStateID>
+                <transitionID>1008841</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>.*,\s+0\%.*</expression>
+                    <negate>true</negate>
+                    <variableID>577796</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>195,367:195,377:195,377:195,377:195,435:195,445</connectorLayout>
+                <fromStateID>897414</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>Ping Fail(Primary)</name>
+                <toStateID>897415</toStateID>
+                <transitionID>1008821</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>1</expression>
+                    <negate>false</negate>
+                    <variableID>577799</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>674,584:674,574:674,574:738,574:738,472:738,462</connectorLayout>
+                <fromStateID>897420</fromStateID>
+                <labelLayout>-7:0:3:46</labelLayout>
+                <name>check flag==1</name>
+                <toStateID>897418</toStateID>
+                <transitionID>1008833</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>415,367:415,377:416,377:416,377:416,422:416,432</connectorLayout>
+                <fromStateID>897416</fromStateID>
+                <labelLayout>1:0:3:54</labelLayout>
+                <name>success</name>
+                <toStateID>897417</toStateID>
+                <transitionID>1008835</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>868,721:878,721:966,721:966,722:1055,722:1065,722</connectorLayout>
+                <fromStateID>897425</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897424</toStateID>
+                <transitionID>1008829</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>-503</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>205,96:205,106:205,125:50,125:50,331:50,341</connectorLayout>
+                <fromStateID>897411</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>-503</name>
+                <toStateID>897410</toStateID>
+                <transitionID>1008839</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>.*,\s+0\%.* </expression>
+                    <negate>true</negate>
+                    <variableID>577798</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>399,600:409,600:405,600:405,600:455,600:455,599:642,599:652,599</connectorLayout>
+                <fromStateID>897408</fromStateID>
+                <labelLayout>0:1:5:43</labelLayout>
+                <name>Ping Failed(secondary)</name>
+                <toStateID>897420</toStateID>
+                <transitionID>1008824</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>.*,\s+0\%.*</expression>
+                    <negate>false</negate>
+                    <variableID>577798</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>399,600:409,600:415,600:415,600:455,600:455,522:504,522:514,522</connectorLayout>
+                <fromStateID>897408</fromStateID>
+                <labelLayout>-12:0:4:44</labelLayout>
+                <name>Ping Success</name>
+                <toStateID>897419</toStateID>
+                <transitionID>1008822</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>1</expression>
+                    <negate>true</negate>
+                    <variableID>577799</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>696,599:706,599:715,599:715,599:755,599:755,601:878,601:888,601</connectorLayout>
+                <fromStateID>897420</fromStateID>
+                <labelLayout>0:-1:5:26</labelLayout>
+                <name>check flag != 1</name>
+                <toStateID>897421</toStateID>
+                <transitionID>1008832</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>761,334:771,334:771,334:771,334:878,334:888,334</connectorLayout>
+                <fromStateID>897423</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897422</toStateID>
+                <transitionID>1008826</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>558,522:568,522:575,522:575,522:625,522:625,447:706,447:716,447</connectorLayout>
+                <fromStateID>897419</fromStateID>
+                <labelLayout>15:0:4:20</labelLayout>
+                <name>success</name>
+                <toStateID>897418</toStateID>
+                <transitionID>1008823</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>487,721:497,721:655,721:655,721:814,721:824,721</connectorLayout>
+                <fromStateID>897426</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897425</toStateID>
+                <transitionID>1008828</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>910,586:910,576:910,575:909,575:909,360:909,350</connectorLayout>
+                <fromStateID>897421</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897422</toStateID>
+                <transitionID>1008831</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>738,432:738,422:739,422:739,422:739,360:739,350</connectorLayout>
+                <fromStateID>897418</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>897423</toStateID>
+                <transitionID>1008825</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>205,95:205,105:203,105:203,105:203,201:203,211</connectorLayout>
+                <fromStateID>897411</fromStateID>
+                <labelLayout>-5:0:3:61</labelLayout>
+                <name>rc=0</name>
+                <toStateID>897413</toStateID>
+                <transitionID>1008838</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>1087,707:1087,697:1087,440:910,440:910,360:910,350</connectorLayout>
+                <fromStateID>897424</fromStateID>
+                <labelLayout>0:-7:2:30</labelLayout>
+                <name>ok</name>
+                <toStateID>897422</toStateID>
+                <transitionID>1008830</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <expression></expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>203,243:203,253:203,265:203,265:203,275:195,275:195,325:195,335</connectorLayout>
+                <fromStateID>897413</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>OUTPUT</name>
+                <toStateID>897414</toStateID>
+                <transitionID>1008837</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>true</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>228,80:238,80:238,80:238,80:331,80:341,80</connectorLayout>
+                <fromStateID>897411</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>Never</name>
+                <toStateID>897412</toStateID>
+                <transitionID>1008819</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>438,447:448,447:448,447:448,447:706,447:716,447</connectorLayout>
+                <fromStateID>897417</fromStateID>
+                <labelLayout>12:0:4:33</labelLayout>
+                <name>success</name>
+                <toStateID>897418</toStateID>
+                <transitionID>1008834</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>.*,\s+0\%.*</expression>
+                    <negate>false</negate>
+                    <variableID>577796</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>218,351:228,351:228,351:228,351:383,351:393,351</connectorLayout>
+                <fromStateID>897414</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>Ping Sucess(primary)</name>
+                <toStateID>897416</toStateID>
+                <transitionID>1008836</transitionID>
+            </Transition>
+        </Transitions>
+        <TicketMatchers/>
+        <Tags/>
+    </automaton>
+    <timeOfExport>2017-06-28T07:33:31.098Z</timeOfExport>
+</automatonExport>

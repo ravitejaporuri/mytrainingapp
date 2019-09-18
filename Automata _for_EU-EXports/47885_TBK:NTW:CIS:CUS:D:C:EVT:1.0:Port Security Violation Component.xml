@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<automatonExport>
+    <automaton>
+        <approvalNotes>Defect:15502&#xD;
+Reason: commands still timing out.&#xD;
+====&#xD;
+Defect Devops:14858&#xD;
+Reason: 1) Determine Ticket Handler -&gt; due to args not set with right thing&#xD;
+2) command time out - will increase soft time out to 30 seconds&#xD;
+3) -more- option received -&gt; as term len 0 command auth failed.&#xD;
+Date:3May2017&#xD;
+&#xD;
+Release:26-Devops:36518&#xD;
+GSA Link: https://bglgsa.ibm.com/projects/a/ap_automation_team/ASEAN/ThanachartBank_TBK/sign-off/Release%2026-Network/</approvalNotes>
+        <approvalStatus>APPROVED</approvalStatus>
+        <automaticDelaySeconds>60</automaticDelaySeconds>
+        <created>2017-03-10T12:35:24Z</created>
+        <Category>
+            <categoryID>1287</categoryID>
+            <clientID>33</clientID>
+            <name>Diagnosis</name>
+            <parent>
+                <categoryID>1285</categoryID>
+                <clientID>33</clientID>
+                <name>Components</name>
+                <parent>
+                    <categoryID>377</categoryID>
+                    <clientID>33</clientID>
+                    <name>Network Management</name>
+                </parent>
+            </parent>
+        </Category>
+        <automatonID>47885</automatonID>
+        <executionMode>MANUAL</executionMode>
+        <isLive>true</isLive>
+        <isMasterTicketOnly>true</isMasterTicketOnly>
+        <matchType>AND</matchType>
+        <modified>2017-05-23T14:29:53Z</modified>
+        <name>TBK:NTW:CIS:CUS:D:C:EVT:1.0:Port Security Violation Component</name>
+        <notes>-Login to device and determine status of port.
+-If port is shutdown with auto recovery enabled, wait 2 iterations of recovery interval.
+and then escalate..</notes>
+        <purpose>DIAGNOSIS</purpose>
+        <newExecutionThrottleCount>0</newExecutionThrottleCount>
+        <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+        <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+        <engineerTimeToRemediate>0</engineerTimeToRemediate>
+        <ConstantVariables>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>affected_host</name>
+                <secure>false</secure>
+                <variableID>593191</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>description</name>
+                <secure>false</secure>
+                <variableID>593193</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>devicehostname</name>
+                <secure>false</secure>
+                <variableID>593189</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>port</name>
+                <secure>false</secure>
+                <variableID>593192</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>port_name</name>
+                <secure>false</secure>
+                <variableID>593197</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>wait</name>
+                <secure>false</secure>
+                <variableID>593183</variableID>
+                <value>&lt;![CDATA[0]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>recoveryEnabledB</name>
+                <secure>false</secure>
+                <variableID>593194</variableID>
+                <value>&lt;![CDATA[1]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>args</name>
+                <secure>false</secure>
+                <variableID>593173</variableID>
+                <value>&lt;![CDATA[{}]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>autoClose</name>
+                <secure>false</secure>
+                <variableID>593195</variableID>
+                <value>&lt;![CDATA[-]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>macaddr</name>
+                <secure>false</secure>
+                <variableID>593196</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>ticketAction</name>
+                <secure>false</secure>
+                <variableID>593198</variableID>
+                <value>&lt;![CDATA[0]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>component_output</name>
+                <secure>false</secure>
+                <variableID>593174</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>47885</automatonID>
+                <name>violationmode_exp</name>
+                <secure>false</secure>
+                <variableID>593190</variableID>
+                <value>&lt;![CDATA[0]]&gt;</value>
+            </ConstantVariable>
+        </ConstantVariables>
+        <FormVariables/>
+        <RegexExtractVariables>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>violationmode</name>
+                <secure>false</secure>
+                <variableID>593176</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+                <filterPattern>.*Violation Mode.*</filterPattern>
+                <matchPattern>.*Violation Mode.*?:\s*(\w+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>errdisableStatus</name>
+                <secure>false</secure>
+                <variableID>593184</variableID>
+                <actionID>771531</actionID>
+                <field>OUT</field>
+                <filterPattern></filterPattern>
+                <matchPattern></matchPattern>
+                <replacePattern></replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>maxMAC</name>
+                <secure>false</secure>
+                <variableID>593181</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+                <filterPattern>.*Maximum MAC Addresses.*</filterPattern>
+                <matchPattern>.*Maximum MAC Addresses.*?:\s*(\d+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>portStatus</name>
+                <secure>false</secure>
+                <variableID>593177</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+                <filterPattern>.*Port Status.*</filterPattern>
+                <matchPattern>.*Port Status.*?:\s*([A-Za-z\-]+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>show_run_int</name>
+                <secure>false</secure>
+                <variableID>593187</variableID>
+                <actionID>771534</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>portsecurity</name>
+                <secure>false</secure>
+                <variableID>593175</variableID>
+                <actionID>771523</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>logs</name>
+                <secure>false</secure>
+                <variableID>593188</variableID>
+                <actionID>771535</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>totalMAC</name>
+                <secure>false</secure>
+                <variableID>593178</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+                <filterPattern>.*Total MAC.*</filterPattern>
+                <matchPattern>.*Total MAC.*?:\s*(\d+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>portSecurity</name>
+                <secure>false</secure>
+                <variableID>593179</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+                <filterPattern>.*Port Security.*</filterPattern>
+                <matchPattern>.*Port Security.*?:\s*(\w+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>macAddrTable</name>
+                <secure>false</secure>
+                <variableID>593182</variableID>
+                <actionID>771525</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>portsecurity_int</name>
+                <secure>false</secure>
+                <variableID>593180</variableID>
+                <actionID>771524</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>errdisableStatusTXT</name>
+                <secure>false</secure>
+                <variableID>593185</variableID>
+                <actionID>771531</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>47885</automatonID>
+                <name>show_int</name>
+                <secure>false</secure>
+                <variableID>593186</variableID>
+                <actionID>771533</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+        </RegexExtractVariables>
+        <RuntimeVariables/>
+        <ScriptExtractVariables/>
+        <Connections>
+            <Connection>
+                <name>affected_host</name>
+                <hostOverrideVar></hostOverrideVar>
+                <connectionClientCode>tbk</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.34</connectionHost>
+                <backupConnectionClientCode>tbk</backupConnectionClientCode>
+                <backupConnectionHost>198.18.125.35</backupConnectionHost>
+                <backupConnectionProtocol>SSH</backupConnectionProtocol>
+            </Connection>
+        </Connections>
+        <CMDBAssociateActions/>
+        <CMDBQueryActions/>
+        <EditVariableActions>
+            <EditVariableAction>
+                <actionID>771527</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919624</stateID>
+                <mathExpression></mathExpression>
+                <refresh>false</refresh>
+                <script>wait=parseFloat(wait)+1;
+wait;</script>
+                <EditVariableTransforms/>
+                <variableID>593183</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>771519</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919634</stateID>
+                <refresh>false</refresh>
+                <script>if(typeof JSON!=="object"){JSON={}}(function(){"use strict";function f(e){return e&lt;10?"0"+e:e}function quote(e){escapable.lastIndex=0;return escapable.test(e)?'"'+e.replace(escapable,function(e){var t=meta[e];return typeof t==="string"?t:"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})+'"':'"'+e+'"'}function str(e,t){var n,r,i,s,o=gap,u,a=t[e];if(a&amp;&amp;typeof a==="object"&amp;&amp;typeof a.toJSON==="function"){a=a.toJSON(e)}if(typeof rep==="function"){a=rep.call(t,e,a)}switch(typeof a){case"string":return quote(a);case"number":return isFinite(a)?String(a):"null";case"boolean":case"null":return String(a);case"object":if(!a){return"null"}gap+=indent;u=[];if(Object.prototype.toString.apply(a)==="[object Array]"){s=a.length;for(n=0;n&lt;s;n+=1){u[n]=str(n,a)||"null"}i=u.length===0?"[]":gap?"[\n"+gap+u.join(",\n"+gap)+"\n"+o+"]":"["+u.join(",")+"]";gap=o;return i}if(rep&amp;&amp;typeof rep==="object"){s=rep.length;for(n=0;n&lt;s;n+=1){if(typeof rep[n]==="string"){r=rep[n];i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}else{for(r in a){if(Object.prototype.hasOwnProperty.call(a,r)){i=str(r,a);if(i){u.push(quote(r)+(gap?": ":":")+i)}}}}i=u.length===0?"{}":gap?"{\n"+gap+u.join(",\n"+gap)+"\n"+o+"}":"{"+u.join(",")+"}";gap=o;return i}}if(typeof Date.prototype.toJSON!=="function"){Date.prototype.toJSON=function(){return isFinite(this.valueOf())?this.getUTCFullYear()+"-"+f(this.getUTCMonth()+1)+"-"+f(this.getUTCDate())+"T"+f(this.getUTCHours())+":"+f(this.getUTCMinutes())+":"+f(this.getUTCSeconds())+"Z":null};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(){return this.valueOf()}}var cx,escapable,gap,indent,meta,rep;if(typeof JSON.stringify!=="function"){escapable=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;meta={"\b":"\\b","  ":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"};JSON.stringify=function(e,t,n){var r;gap="";indent="";if(typeof n==="number"){for(r=0;r&lt;n;r+=1){indent+=" "}}else if(typeof n==="string"){indent=n}rep=t;if(t&amp;&amp;typeof t!=="function"&amp;&amp;(typeof t!=="object"||typeof t.length!=="number")){throw new Error("JSON.stringify")}return str("",{"":e})}}if(typeof JSON.parse!=="function"){cx=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;JSON.parse=function(text,reviver){function walk(e,t){var n,r,i=e[t];if(i&amp;&amp;typeof i==="object"){for(n in i){if(Object.prototype.hasOwnProperty.call(i,n)){r=walk(i,n);if(r!==undefined){i[n]=r}else{delete i[n]}}}}return reviver.call(e,t,i)}var j;text=String(text);cx.lastIndex=0;if(cx.test(text)){text=text.replace(cx,function(e){return"\\u"+("0000"+e.charCodeAt(0).toString(16)).slice(-4)})}if(/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,"@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,"]").replace(/(?:^|:|,)(?:\s*\[)+/g,""))){j=eval("("+text+")");return typeof reviver==="function"?walk({"":j},""):j}throw new SyntaxError("JSON.parse")}}})()
+
+//convert string to JSON object(hash)
+args=JSON.parse(args);
+args["closure_code"]="Diagnosis";
+args=JSON.stringify(args);</script>
+                <EditVariableTransforms/>
+                <variableID>593173</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>771520</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919633</stateID>
+                <refresh>false</refresh>
+                <script>component_output="Error Message:" + description + "\n";
+component_output+="------------------------------------------------------------\n\n";
+component_output+="Host Details:\n"
+component_output+="------------------------------------------------------------\n\n";
+component_output+="Device Name: " + devicehostname + "\n";
+component_output+="Device IP Address:" + affected_host + "\n";
+component_output+="------------------------------------------------------------\n\n";
+component_output+=errdisableStatus;
+component_output+="\n\n" + show_int;
+component_output+="\n\n" + show_run_int;
+component_output+="\n\n" + portsecurity;
+component_output+="\n\n" + portsecurity_int;
+component_output+="\n\n" + macAddrTable + "\n\n";
+component_output+="Device Log:\n------------------------------------------------------------\n" + logs + "\n";
+component_output+="\n------------------------------------------------------------\n\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>593174</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>771532</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919622</stateID>
+                <refresh>false</refresh>
+                <script>var regex = new RegExp(".*?\\w"+port+"\\s.*err-disabled\\s+(\\w+)","im");
+var match = regex.exec(errdisableStatus);
+if (match){
+match[1];
+}else{
+'';
+}</script>
+                <EditVariableTransforms/>
+                <variableID>593184</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>771522</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919630</stateID>
+                <refresh>false</refresh>
+                <script>component_output="Could not collect information from device as the commands did not retrieve output back to ipcenter";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>593174</variableID>
+            </EditVariableAction>
+        </EditVariableActions>
+        <EmailActions>
+            <EmailAction>
+                <actionID>771528</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919639</stateID>
+                <body>${port}
+${macaddr}
+${violationmode_exp}
+${wait}
+${recoveryEnabledB}
+${ticketAction}
+${autoClose}
+${component_output}
+${devicehostname}
+${affected_host}
+${description}
+${args}</body>
+                <from>@</from>
+                <subject>@</subject>
+                <to>@</to>
+            </EmailAction>
+        </EmailActions>
+        <FormActions/>
+        <HostCommandActions>
+            <HostCommandAction>
+                <actionID>771524</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593176</RegexExtractVariableID>
+                    <RegexExtractVariableID>593177</RegexExtractVariableID>
+                    <RegexExtractVariableID>593178</RegexExtractVariableID>
+                    <RegexExtractVariableID>593179</RegexExtractVariableID>
+                    <RegexExtractVariableID>593181</RegexExtractVariableID>
+                    <RegexExtractVariableID>593180</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919628</stateID>
+                <command>show port-security interface ${port_name}</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>90</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771534</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593187</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919620</stateID>
+                <command>show run int ${port_name}</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>90</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771535</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593188</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919619</stateID>
+                <command>show log | in PSECURE_VIOLATION</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>90</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771529</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919637</stateID>
+                <command>term len 0</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771530</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919636</stateID>
+                <command>term len 0</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771531</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593184</RegexExtractVariableID>
+                    <RegexExtractVariableID>593185</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919623</stateID>
+                <command>show int status err-disabled | i ${port_name}</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>40</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771533</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593186</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919621</stateID>
+                <command>show int ${port_name}</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>90</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771523</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593175</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919629</stateID>
+                <command>show port-security</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>60</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>771525</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>593182</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>919627</stateID>
+                <command>show mac address-table int ${port_name}</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>120</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>60</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+        </HostCommandActions>
+        <LinkActions/>
+        <LockTicketActions/>
+        <RfcActions/>
+        <ScriptActions>
+            <ScriptAction>
+                <actionID>771526</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919625</stateID>
+                <script>function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i &lt; 40e7; i++) {
+    if ((new Date().getTime() - start) &gt; milliseconds){
+      break;
+    }
+  }
+}
+
+var out = "Wait Start "+new Date()+"\n";
+sleep(300000);
+out += "Wait End "+new Date()+"\n";
+out;</script>
+            </ScriptAction>
+            <ScriptAction>
+                <actionID>771521</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>919632</stateID>
+                <script>var old = execution.getPurpose();
+execution.setPurpose("DIAGNOSIS");
+"Change Execution Purpose from " + old + " to " + execution.getPurpose();
+</script>
+            </ScriptAction>
+        </ScriptActions>
+        <WaitForRecoveryIPmonActions/>
+        <GenericTicketEventWaitActions/>
+        <AckProblemIPmonActions/>
+        <CancelDowntimeIPmonActions/>
+        <ExecuteCheckIPmonActions/>
+        <ScheduleDowntimeIPmonActions/>
+        <PhoneCallActions/>
+        <TimedWaitActions/>
+        <UpdateTicketActions/>
+        <SubmitPassiveIPmonActionDetails/>
+        <HttpRequestActions/>
+        <IPdiscoverActions/>
+        <ExecuteIPadminActions/>
+        <SQLCommandActions/>
+        <NotifyActions/>
+        <ForkStates/>
+        <FormStates/>
+        <JoinStates/>
+        <LinkStates/>
+        <NoopStates>
+            <NoopState>
+                <name>Begin</name>
+                <originalID>827279</originalID>
+                <stateID>919638</stateID>
+                <XPos>271</XPos>
+                <YPos>57</YPos>
+            </NoopState>
+            <NoopState>
+                <name>Where To Now?</name>
+                <notes>Now we have mac-address-table, do we wait for recovery?</notes>
+                <originalID>2990955</originalID>
+                <stateID>919626</stateID>
+                <XPos>598</XPos>
+                <YPos>468</YPos>
+            </NoopState>
+            <NoopState>
+                <name>Noop</name>
+                <originalID>918774</originalID>
+                <stateID>919631</stateID>
+                <XPos>934</XPos>
+                <YPos>708</YPos>
+            </NoopState>
+        </NoopStates>
+        <NormalStates>
+            <NormalState>
+                <actionID>771524</actionID>
+                <name>port-security interface</name>
+                <originalID>2990528</originalID>
+                <stateID>919628</stateID>
+                <XPos>806</XPos>
+                <YPos>359</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771534</actionID>
+                <name>show run int</name>
+                <originalID>2994497</originalID>
+                <stateID>919620</stateID>
+                <XPos>705</XPos>
+                <YPos>175</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771528</actionID>
+                <name>Declare Vars</name>
+                <originalID>2990938</originalID>
+                <stateID>919639</stateID>
+                <XPos>139</XPos>
+                <YPos>56</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771535</actionID>
+                <name>show log</name>
+                <notes>std cmd: sh log | i PORT_SECURITY-SPSTBY-2-PSECURE_VIOLATION</notes>
+                <originalID>3016248</originalID>
+                <stateID>919619</stateID>
+                <XPos>806</XPos>
+                <YPos>176</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771529</actionID>
+                <name>term len 0</name>
+                <originalID>184857</originalID>
+                <stateID>919637</stateID>
+                <XPos>269</XPos>
+                <YPos>176</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771527</actionID>
+                <name>Inc</name>
+                <originalID>2990954</originalID>
+                <stateID>919624</stateID>
+                <XPos>411</XPos>
+                <YPos>293</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771530</actionID>
+                <name>term len 0</name>
+                <originalID>184857</originalID>
+                <stateID>919636</stateID>
+                <XPos>270</XPos>
+                <YPos>306</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771531</actionID>
+                <name>ErrDisable</name>
+                <notes>show int status err-disabled | i ${port} </notes>
+                <originalID>2992431</originalID>
+                <stateID>919623</stateID>
+                <XPos>411</XPos>
+                <YPos>175</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771519</actionID>
+                <name>set diagnosis args</name>
+                <originalID>826858</originalID>
+                <stateID>919634</stateID>
+                <XPos>808</XPos>
+                <YPos>467</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771526</actionID>
+                <name>sleep for 5 min for recovery</name>
+                <originalID>827382</originalID>
+                <stateID>919625</stateID>
+                <XPos>411</XPos>
+                <YPos>402</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771533</actionID>
+                <name>show int</name>
+                <originalID>2994498</originalID>
+                <stateID>919621</stateID>
+                <XPos>614</XPos>
+                <YPos>176</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771520</actionID>
+                <name>edit compout</name>
+                <originalID>827295</originalID>
+                <stateID>919633</stateID>
+                <XPos>809</XPos>
+                <YPos>579</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771521</actionID>
+                <name>Change Purpose to Diagnosis</name>
+                <originalID>3045814</originalID>
+                <stateID>919632</stateID>
+                <XPos>808</XPos>
+                <YPos>707</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771532</actionID>
+                <name>ErrDisableStatus</name>
+                <originalID>2992555</originalID>
+                <stateID>919622</stateID>
+                <XPos>512</XPos>
+                <YPos>174</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771523</actionID>
+                <name>port-security</name>
+                <originalID>2990527</originalID>
+                <stateID>919629</stateID>
+                <XPos>806</XPos>
+                <YPos>272</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771522</actionID>
+                <name>commands timed out</name>
+                <originalID>918749</originalID>
+                <stateID>919630</stateID>
+                <XPos>925</XPos>
+                <YPos>9</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>771525</actionID>
+                <name>show mac address-table</name>
+                <originalID>2990953</originalID>
+                <stateID>919627</stateID>
+                <XPos>595</XPos>
+                <YPos>359</YPos>
+            </NormalState>
+        </NormalStates>
+        <SuccessStates>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>2990530</originalID>
+                <stateID>919635</stateID>
+                <XPos>596</XPos>
+                <YPos>707</YPos>
+            </SuccessState>
+        </SuccessStates>
+        <WaitStates/>
+        <Transitions>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>925,25:925,35:925,45:925,45:925,55:934,55:934,682:934,692</connectorLayout>
+                <fromStateID>919630</fromStateID>
+                <labelLayout>1:0:5:55</labelLayout>
+                <name>ok</name>
+                <toStateID>919631</toStateID>
+                <transitionID>1034084</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>271,73:271,83:271,95:271,95:271,115:269,115:269,150:269,160</connectorLayout>
+                <fromStateID>919638</fromStateID>
+                <labelLayout>6:0:5:24</labelLayout>
+                <name>ALWAYS</name>
+                <toStateID>919637</toStateID>
+                <transitionID>1034093</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>595,375:595,385:598,385:598,385:598,442:598,452</connectorLayout>
+                <fromStateID>919627</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919626</toStateID>
+                <transitionID>1034088</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>912,708:902,708:871,708:871,707:840,707:830,707</connectorLayout>
+                <fromStateID>919631</fromStateID>
+                <labelLayout>0:-32:3:26</labelLayout>
+                <name>go</name>
+                <toStateID>919632</toStateID>
+                <transitionID>1034083</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>595,343:595,333:595,235:925,235:925,35:925,25</connectorLayout>
+                <fromStateID>919627</fromStateID>
+                <labelLayout>0:1:2:26</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034077</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>(?i)Authorization failed</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>2</weight>
+                </transitionEvaluator>
+                <connectorLayout>269,192:269,202:269,215:269,215:269,225:270,225:270,280:270,290</connectorLayout>
+                <fromStateID>919637</fromStateID>
+                <labelLayout>-15:0:5:56</labelLayout>
+                <name>auth failed? redo</name>
+                <toStateID>919636</toStateID>
+                <transitionID>1034095</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>806,256:806,246:806,244:925,244:925,35:925,25</connectorLayout>
+                <fromStateID>919629</fromStateID>
+                <labelLayout>0:5:2:52</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034085</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>786,708:776,708:776,707:776,707:629,707:619,707</connectorLayout>
+                <fromStateID>919632</fromStateID>
+                <labelLayout>0:0:3:48</labelLayout>
+                <name>OK</name>
+                <toStateID>919635</toStateID>
+                <transitionID>1034082</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>806,192:806,202:807,202:807,202:807,245:807,255</connectorLayout>
+                <fromStateID>919619</fromStateID>
+                <labelLayout>0:1:3:41</labelLayout>
+                <name>ok</name>
+                <toStateID>919629</toStateID>
+                <transitionID>1034072</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>637,176:647,176:644,176:644,9:893,9:903,9</connectorLayout>
+                <fromStateID>919621</fromStateID>
+                <labelLayout>-4:0:2:57</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034073</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>JAVASCRIPT</evaluatorType>
+                    <expression>if (parseInt(recoveryEnabledB.getValue()) == 1  &amp;&amp; parseInt(wait.getValue()) &lt; 2 &amp;&amp; errdisableStatus.getValue() != ""){true;}</expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>576,468:566,468:555,468:555,468:535,468:535,402:443,402:433,402</connectorLayout>
+                <fromStateID>919626</fromStateID>
+                <labelLayout>0:86:5:92</labelLayout>
+                <name>Wait - Auto Recovery Possible</name>
+                <toStateID>919625</toStateID>
+                <transitionID>1034089</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>806,160:806,150:806,92:925,92:925,35:925,25</connectorLayout>
+                <fromStateID>919619</fromStateID>
+                <labelLayout>0:0:2:56</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034075</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>true</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>249,57:239,57:239,56:239,56:172,56:162,56</connectorLayout>
+                <fromStateID>919638</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>never</name>
+                <toStateID>919639</toStateID>
+                <transitionID>1034092</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>292,176:302,176:302,175:302,175:379,175:389,175</connectorLayout>
+                <fromStateID>919637</fromStateID>
+                <labelLayout>0:-11:3:25</labelLayout>
+                <name>ok</name>
+                <toStateID>919623</toStateID>
+                <transitionID>1034094</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>784,360:774,360:765,360:765,360:715,360:715,359:628,359:618,359</connectorLayout>
+                <fromStateID>919628</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919627</toStateID>
+                <transitionID>1034087</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>434,175:444,175:455,175:455,175:435,175:435,9:893,9:903,9</connectorLayout>
+                <fromStateID>919623</fromStateID>
+                <labelLayout>8:0:4:55</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034076</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>728,175:738,175:745,175:745,175:736,175:736,9:893,9:903,9</connectorLayout>
+                <fromStateID>919620</fromStateID>
+                <labelLayout>2:0:4:60</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034078</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>JAVASCRIPT</evaluatorType>
+                    <expression>if (parseInt(wait.getValue()) &gt; 0){true;}</expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>411,278:411,268:411,268:411,268:411,201:411,191</connectorLayout>
+                <fromStateID>919624</fromStateID>
+                <labelLayout>74:0:3:25</labelLayout>
+                <name>Refresh Interface Information--^</name>
+                <toStateID>919623</toStateID>
+                <transitionID>1034091</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>434,175:444,175:444,174:444,174:480,174:490,174</connectorLayout>
+                <fromStateID>919623</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919622</toStateID>
+                <transitionID>1034097</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>534,174:544,174:544,175:544,175:581,175:591,175</connectorLayout>
+                <fromStateID>919622</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919621</toStateID>
+                <transitionID>1034098</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>806,343:806,333:806,336:925,336:925,35:925,25</connectorLayout>
+                <fromStateID>919628</fromStateID>
+                <labelLayout>0:6:2:66</labelLayout>
+                <name>not ok</name>
+                <toStateID>919630</toStateID>
+                <transitionID>1034074</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>808,483:808,493:809,493:809,493:809,554:809,564</connectorLayout>
+                <fromStateID>919634</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919633</toStateID>
+                <transitionID>1034080</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>(\Q#\E|\Q&gt;\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>293,306:303,306:341,306:341,175:379,175:389,175</connectorLayout>
+                <fromStateID>919636</fromStateID>
+                <labelLayout>12:0:2:54</labelLayout>
+                <name>ok</name>
+                <toStateID>919623</toStateID>
+                <transitionID>1034096</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>411,387:411,377:411,377:411,377:411,319:411,309</connectorLayout>
+                <fromStateID>919625</fromStateID>
+                <labelLayout>0:0:4:60</labelLayout>
+                <name>Next</name>
+                <toStateID>919624</toStateID>
+                <transitionID>1034090</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>728,175:738,175:738,176:738,176:773,176:783,176</connectorLayout>
+                <fromStateID>919620</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919619</toStateID>
+                <transitionID>1034100</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>637,176:647,176:647,175:647,175:673,175:683,175</connectorLayout>
+                <fromStateID>919621</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919620</toStateID>
+                <transitionID>1034099</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>JAVASCRIPT</evaluatorType>
+                    <expression>if ((parseInt(recoveryEnabledB.getValue()) == 1 &amp;&amp; errdisableStatus.getValue() != "" &amp;&amp; parseInt(wait.getValue()) &gt;= 2) || (parseInt(recoveryEnabledB.getValue()) == 0) || errdisableStatus.getValue() == ""){true;}</expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>621,468:631,468:631,467:631,467:776,467:786,467</connectorLayout>
+                <fromStateID>919626</fromStateID>
+                <labelLayout>-19:75:1:0</labelLayout>
+                <name>No Wait - Recovery Not Detected OR Wait 2 iterations complete</name>
+                <toStateID>919634</toStateID>
+                <transitionID>1034079</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>809,595:809,605:808,605:808,605:808,683:808,693</connectorLayout>
+                <fromStateID>919633</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>919632</toStateID>
+                <transitionID>1034081</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>806,288:806,298:806,298:806,298:806,334:806,344</connectorLayout>
+                <fromStateID>919629</fromStateID>
+                <labelLayout>0:0:3:63</labelLayout>
+                <name>ok</name>
+                <toStateID>919628</toStateID>
+                <transitionID>1034086</transitionID>
+            </Transition>
+        </Transitions>
+        <TicketMatchers/>
+        <Tags/>
+    </automaton>
+    <timeOfExport>2017-06-28T07:33:33.105Z</timeOfExport>
+</automatonExport>

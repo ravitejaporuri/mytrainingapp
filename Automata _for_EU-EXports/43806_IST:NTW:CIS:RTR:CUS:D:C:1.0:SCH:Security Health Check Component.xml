@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<automatonExport>
+    <automaton>
+        <approvalNotes>Date:3/03/2017&#xD;
+Reason:New automata&#xD;
+Devops:&#xD;
+https://hub.jazz.net/ccm06/quickplanner/jazzhub.html#items:projectId=_F_H7VnfoEeSi-OIwg-tlIA&amp;serverId=hub.jazz.net&amp;planType=mywork&amp;paneType=inprogress&amp;allIterations=true&amp;itemId=36258</approvalNotes>
+        <approvalStatus>APPROVED</approvalStatus>
+        <automaticDelaySeconds>60</automaticDelaySeconds>
+        <created>2017-02-23T11:07:22Z</created>
+        <Category>
+            <categoryID>2819</categoryID>
+            <clientID>83</clientID>
+            <name>Diagnosis</name>
+            <parent>
+                <categoryID>2816</categoryID>
+                <clientID>83</clientID>
+                <name>Component</name>
+                <parent>
+                    <categoryID>2674</categoryID>
+                    <clientID>83</clientID>
+                    <name>Network Management</name>
+                </parent>
+            </parent>
+        </Category>
+        <automatonID>43806</automatonID>
+        <executionMode>MANUAL</executionMode>
+        <isLive>true</isLive>
+        <isMasterTicketOnly>true</isMasterTicketOnly>
+        <matchType>AND</matchType>
+        <modified>2017-03-03T11:15:51Z</modified>
+        <name>IST:NTW:CIS:RTR:CUS:D:C:1.0:SCH:Security Health Check Component</name>
+        <purpose>DIAGNOSIS</purpose>
+        <newExecutionThrottleCount>0</newExecutionThrottleCount>
+        <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+        <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+        <engineerTimeToRemediate>0</engineerTimeToRemediate>
+        <ConstantVariables>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>linaux_chk</name>
+                <secure>false</secure>
+                <variableID>522521</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>lgbfr_chk</name>
+                <secure>false</secure>
+                <variableID>522525</variableID>
+                <value>&lt;![CDATA[PASS]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>acl38_chk</name>
+                <secure>false</secure>
+                <variableID>522532</variableID>
+                <value>&lt;![CDATA[PASS]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>acl15_chk</name>
+                <secure>false</secure>
+                <variableID>522536</variableID>
+                <value>&lt;![CDATA[PASS]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>encry_chk</name>
+                <secure>false</secure>
+                <variableID>522533</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>snmprw_chk</name>
+                <secure>false</secure>
+                <variableID>522527</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>bootp_chk</name>
+                <secure>false</secure>
+                <variableID>522530</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>aaa_chk</name>
+                <secure>false</secure>
+                <variableID>522513</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>tmst_chk</name>
+                <secure>false</secure>
+                <variableID>522537</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>shc_output</name>
+                <secure>false</secure>
+                <variableID>522531</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>lincon_chk</name>
+                <secure>false</secure>
+                <variableID>522524</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>tcp_chk</name>
+                <secure>false</secure>
+                <variableID>522514</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>affected_host</name>
+                <secure>false</secure>
+                <variableID>522517</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>snmpro_chk</name>
+                <secure>false</secure>
+                <variableID>522518</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>int_down_chk</name>
+                <secure>false</secure>
+                <variableID>522522</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>tcsrv_chk</name>
+                <secure>false</secure>
+                <variableID>522512</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>secret_chk</name>
+                <secure>false</secure>
+                <variableID>522515</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>motd_chk</name>
+                <secure>false</secure>
+                <variableID>522519</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>srcrt_chk</name>
+                <secure>false</secure>
+                <variableID>522528</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>ntp_chk</name>
+                <secure>false</secure>
+                <variableID>522520</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>lgg_chk</name>
+                <secure>false</secure>
+                <variableID>522523</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>usr_chk</name>
+                <secure>false</secure>
+                <variableID>522516</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>minlen_chk</name>
+                <secure>false</secure>
+                <variableID>522529</variableID>
+                <value>&lt;![CDATA[PASS]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>http_chk</name>
+                <secure>false</secure>
+                <variableID>522526</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>int_desc_chk</name>
+                <secure>false</secure>
+                <variableID>522535</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>43806</automatonID>
+                <name>linvty_chk</name>
+                <secure>false</secure>
+                <variableID>522534</variableID>
+                <value>&lt;![CDATA[FAIL]]&gt;</value>
+            </ConstantVariable>
+        </ConstantVariables>
+        <FormVariables/>
+        <RegexExtractVariables>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>ntp_out</name>
+                <secure>false</secure>
+                <variableID>522482</variableID>
+                <actionID>684648</actionID>
+                <field>OUT</field>
+                <filterPattern>.*</filterPattern>
+                <matchPattern>(?i)(synchronized)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>loggbuffer_all</name>
+                <secure>false</secure>
+                <variableID>522508</variableID>
+                <actionID>684660</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>lincon_out</name>
+                <secure>false</secure>
+                <variableID>522480</variableID>
+                <actionID>684647</actionID>
+                <field>OUT</field>
+                <filterPattern>^line con.*</filterPattern>
+                <matchPattern>.*(line con).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>lgbfr_out</name>
+                <secure>false</secure>
+                <variableID>522509</variableID>
+                <actionID>684660</actionID>
+                <field>OUT</field>
+                <filterPattern></filterPattern>
+                <matchPattern></matchPattern>
+                <replacePattern></replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>encry_out</name>
+                <secure>false</secure>
+                <variableID>522504</variableID>
+                <actionID>684658</actionID>
+                <field>OUT</field>
+                <filterPattern>^service.*</filterPattern>
+                <matchPattern>.*(service password\-encryption).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>usr_all</name>
+                <secure>false</secure>
+                <variableID>522497</variableID>
+                <actionID>684654</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>acl38_out</name>
+                <secure>false</secure>
+                <variableID>522474</variableID>
+                <actionID>684644</actionID>
+                <field>OUT</field>
+                <filterPattern>^access-list.*</filterPattern>
+                <matchPattern>.*(access-list).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>motd_out</name>
+                <secure>false</secure>
+                <variableID>522488</variableID>
+                <actionID>684651</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>linvty_all</name>
+                <secure>false</secure>
+                <variableID>522475</variableID>
+                <actionID>684645</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>snmprw_out1</name>
+                <secure>false</secure>
+                <variableID>522492</variableID>
+                <actionID>684652</actionID>
+                <field>OUT</field>
+                <filterPattern>^snmp.*</filterPattern>
+                <matchPattern>(?i).*(snmp\-server community (miyamoto|mushashi|brabus|isat-wips) RW 1).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>iphttp_all</name>
+                <secure>false</secure>
+                <variableID>522466</variableID>
+                <actionID>684638</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>snmprw_out2</name>
+                <secure>false</secure>
+                <variableID>522491</variableID>
+                <actionID>684652</actionID>
+                <field>OUT</field>
+                <filterPattern>^snmp.*</filterPattern>
+                <matchPattern>(?i).*(snmp\-server community (miyamoto|mushashi|brabus|isat-wips) RW 1)?(.*community.*RW.*)</matchPattern>
+                <replacePattern>$2</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>tmst_out</name>
+                <secure>false</secure>
+                <variableID>522502</variableID>
+                <actionID>684657</actionID>
+                <field>OUT</field>
+                <filterPattern>^service.*</filterPattern>
+                <matchPattern>.*(service timestamps log datetime msec localtime).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>ipbootp_all</name>
+                <secure>false</secure>
+                <variableID>522469</variableID>
+                <actionID>684639</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>timestamp_all</name>
+                <secure>false</secure>
+                <variableID>522503</variableID>
+                <actionID>684657</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>int_desc_all</name>
+                <secure>false</secure>
+                <variableID>522461</variableID>
+                <actionID>684635</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>int_down_out</name>
+                <secure>false</secure>
+                <variableID>522463</variableID>
+                <actionID>684636</actionID>
+                <field>OUT</field>
+                <filterPattern>^(G|T|V|F|L|P).*</filterPattern>
+                <matchPattern>(.*admin down.*down.*)|(.*down.*down.*)</matchPattern>
+                <replacePattern>$2</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>lincon_all</name>
+                <secure>false</secure>
+                <variableID>522479</variableID>
+                <actionID>684647</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>secaaa_all</name>
+                <secure>false</secure>
+                <variableID>522500</variableID>
+                <actionID>684656</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>serhost_all</name>
+                <secure>false</secure>
+                <variableID>522499</variableID>
+                <actionID>684655</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>en_sec_all</name>
+                <secure>false</secure>
+                <variableID>522465</variableID>
+                <actionID>684637</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>linaux_all</name>
+                <secure>false</secure>
+                <variableID>522477</variableID>
+                <actionID>684646</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>linaux_out</name>
+                <secure>false</secure>
+                <variableID>522478</variableID>
+                <actionID>684646</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>logg_all</name>
+                <secure>false</secure>
+                <variableID>522510</variableID>
+                <actionID>684661</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>lgg_out</name>
+                <secure>false</secure>
+                <variableID>522511</variableID>
+                <actionID>684661</actionID>
+                <field>OUT</field>
+                <filterPattern>^logging.*</filterPattern>
+                <matchPattern>.*(logging.*(10\.6\.4\.90|10\.6\.9\.80|124\.195\.15\.237)).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>int_desc_down</name>
+                <secure>false</secure>
+                <variableID>522462</variableID>
+                <actionID>684636</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>ipsrc_all</name>
+                <secure>false</secure>
+                <variableID>522471</variableID>
+                <actionID>684640</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>tcp_out</name>
+                <secure>false</secure>
+                <variableID>522506</variableID>
+                <actionID>684659</actionID>
+                <field>OUT</field>
+                <filterPattern>^service.*</filterPattern>
+                <matchPattern>.*(service tcp\-keepalives\-in).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>ntpass_all</name>
+                <secure>false</secure>
+                <variableID>522481</variableID>
+                <actionID>684648</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>tcsrv_out</name>
+                <secure>false</secure>
+                <variableID>522498</variableID>
+                <actionID>684655</actionID>
+                <field>OUT</field>
+                <filterPattern>.*</filterPattern>
+                <matchPattern>.*(tacacs\-server host 10\.6\.4\.243).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>acl15_out</name>
+                <secure>false</secure>
+                <variableID>522484</variableID>
+                <actionID>684649</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>snmpro_out2</name>
+                <secure>false</secure>
+                <variableID>522485</variableID>
+                <actionID>684650</actionID>
+                <field>OUT</field>
+                <filterPattern>^snmp.*</filterPattern>
+                <matchPattern>(snmp-server community (miyamoto|musashi|brabus|isat-wips).*RO (1|5))?(.*)</matchPattern>
+                <replacePattern>$2</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>component_output</name>
+                <secure>false</secure>
+                <variableID>522472</variableID>
+                <actionID>684641</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>devhostname1</name>
+                <secure>false</secure>
+                <variableID>522459</variableID>
+                <actionID>684634</actionID>
+                <field>OUT</field>
+                <filterPattern>.*(\Q#\E|\Q&gt;\E|\Q$\E)</filterPattern>
+                <matchPattern>(.*)(\Q#\E|\Q&gt;\E|\Q$\E)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>snmpro_out1</name>
+                <secure>false</secure>
+                <variableID>522487</variableID>
+                <actionID>684650</actionID>
+                <field>OUT</field>
+                <filterPattern>^snmp.*</filterPattern>
+                <matchPattern>(snmp-server community (miyamoto|musashi|brabus|isat-wips).*RO (1|5))?(.*)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>secpwd_all</name>
+                <secure>false</secure>
+                <variableID>522494</variableID>
+                <actionID>684653</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>int_desc_out</name>
+                <secure>false</secure>
+                <variableID>522460</variableID>
+                <actionID>684635</actionID>
+                <field>OUT</field>
+                <filterPattern>^(G|T|V|F|L|P).*</filterPattern>
+                <matchPattern>(.*up\s+up\s+\n)|(.*up\s+up\s+.*\n)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>srcrt_out</name>
+                <secure>false</secure>
+                <variableID>522470</variableID>
+                <actionID>684640</actionID>
+                <field>OUT</field>
+                <filterPattern>^no.*</filterPattern>
+                <matchPattern>(no ip source\-route).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>aaa_out</name>
+                <secure>false</secure>
+                <variableID>522501</variableID>
+                <actionID>684656</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>snmpro_all</name>
+                <secure>false</secure>
+                <variableID>522486</variableID>
+                <actionID>684650</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>acl_all</name>
+                <secure>false</secure>
+                <variableID>522483</variableID>
+                <actionID>684649</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>bootp_out</name>
+                <secure>false</secure>
+                <variableID>522468</variableID>
+                <actionID>684639</actionID>
+                <field>OUT</field>
+                <filterPattern>^no.*</filterPattern>
+                <matchPattern>(no ip bootp server).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>tcpkeep_all</name>
+                <secure>false</secure>
+                <variableID>522507</variableID>
+                <actionID>684659</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>http_out</name>
+                <secure>false</secure>
+                <variableID>522467</variableID>
+                <actionID>684638</actionID>
+                <field>OUT</field>
+                <filterPattern>^no.*</filterPattern>
+                <matchPattern>(no ip http server).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>linvty1_out</name>
+                <secure>false</secure>
+                <variableID>522476</variableID>
+                <actionID>684645</actionID>
+                <field>OUT</field>
+                <filterPattern></filterPattern>
+                <matchPattern></matchPattern>
+                <replacePattern></replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>snmp_all</name>
+                <secure>false</secure>
+                <variableID>522490</variableID>
+                <actionID>684652</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue></defaultValue>
+                <name>usr_out2</name>
+                <secure>false</secure>
+                <variableID>522495</variableID>
+                <actionID>684654</actionID>
+                <field>OUT</field>
+                <filterPattern>^?(username).*</filterPattern>
+                <matchPattern>(?i)(username indosat privilege 15.*)?(.*)</matchPattern>
+                <replacePattern>$2</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>srcpwd_all</name>
+                <secure>false</secure>
+                <variableID>522505</variableID>
+                <actionID>684658</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>usr_out1</name>
+                <secure>false</secure>
+                <variableID>522496</variableID>
+                <actionID>684654</actionID>
+                <field>OUT</field>
+                <filterPattern>^?(username).*</filterPattern>
+                <matchPattern>(?i)(username indosat privilege 15.*)?(.*)</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>motd_all</name>
+                <secure>false</secure>
+                <variableID>522489</variableID>
+                <actionID>684651</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue>no</defaultValue>
+                <name>minlen_out</name>
+                <secure>false</secure>
+                <variableID>522493</variableID>
+                <actionID>684653</actionID>
+                <field>OUT</field>
+                <filterPattern>.*</filterPattern>
+                <matchPattern>.*(min-length 8).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <name>acl38_all</name>
+                <secure>false</secure>
+                <variableID>522473</variableID>
+                <actionID>684644</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>43806</automatonID>
+                <defaultValue> </defaultValue>
+                <name>secret_out</name>
+                <secure>false</secure>
+                <variableID>522464</variableID>
+                <actionID>684637</actionID>
+                <field>OUT</field>
+                <filterPattern>^enable.*</filterPattern>
+                <matchPattern>.*(enable secret).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+        </RegexExtractVariables>
+        <RuntimeVariables/>
+        <ScriptExtractVariables/>
+        <Connections>
+            <Connection>
+                <name>affected_host</name>
+                <connectionName>Unix JB1</connectionName>
+                <connectionClientCode>ist</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.114</connectionHost>
+            </Connection>
+        </Connections>
+        <CMDBAssociateActions/>
+        <CMDBQueryActions/>
+        <EditVariableActions>
+            <EditVariableAction>
+                <actionID>684642</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>819342</stateID>
+                <refresh>false</refresh>
+                <EditVariableTransforms>
+                    <EditVariableTransform>
+                        <arguments/>
+                        <transformMethodID>75</transformMethodID>
+                    </EditVariableTransform>
+                </EditVariableTransforms>
+                <variableID>522472</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>684643</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>819341</stateID>
+                <refresh>false</refresh>
+                <script>affected_host + ',' + int_desc_chk + ',' + int_down_chk + ',' + secret_chk + ',' + http_chk + ',' + bootp_chk + ',' + srcrt_chk + ',' + lgg_chk + ',' + lgbfr_chk + ',' + tcp_chk + ',' + encry_chk + ',' + tmst_chk + ',' + aaa_chk + ',' + tcsrv_chk + ',' + usr_chk + ',' + minlen_chk + ',' + snmprw_chk + ',' + motd_chk + ',' + snmpro_chk + ',' + acl15_chk + ',' + ntp_chk + ',' + lincon_chk + ',' + linaux_chk + ',' + linvty_chk + ',' + acl38_chk;</script>
+                <EditVariableTransforms/>
+                <variableID>522472</variableID>
+            </EditVariableAction>
+        </EditVariableActions>
+        <EmailActions>
+            <EmailAction>
+                <actionID>684633</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>819322</stateID>
+                <body>${affected_host}
+${int_desc_chk}
+${int_down_chk}
+${secret_chk}
+${http_chk}
+${bootp_chk}
+${srcrt_chk}
+${lgg_chk}
+${lgbfr_chk}
+${tcp_chk}
+${encry_chk}
+${tmst_chk}
+${aaa_chk}
+${tcsrv_chk}
+${usr_chk}
+${minlen_chk}
+${snmprw_chk}
+${motd_chk}
+${snmpro_chk}
+${acl15_chk}
+${ntp_chk}
+${lincon_chk}
+${linaux_chk}
+${linvty_chk}
+${acl38_chk}
+${shc_output}</body>
+                <from>@</from>
+                <subject>@</subject>
+                <to>@</to>
+            </EmailAction>
+        </EmailActions>
+        <FormActions/>
+        <HostCommandActions>
+            <HostCommandAction>
+                <actionID>684640</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522470</RegexExtractVariableID>
+                    <RegexExtractVariableID>522471</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819315</stateID>
+                <command>show run | in ip source</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684651</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522488</RegexExtractVariableID>
+                    <RegexExtractVariableID>522489</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819332</stateID>
+                <command>show run | be motd</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684652</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522491</RegexExtractVariableID>
+                    <RegexExtractVariableID>522490</RegexExtractVariableID>
+                    <RegexExtractVariableID>522492</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819331</stateID>
+                <command>show run | in snmp.*RW</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>20</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684661</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522510</RegexExtractVariableID>
+                    <RegexExtractVariableID>522511</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819314</stateID>
+                <command>show run | in logging</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684656</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522500</RegexExtractVariableID>
+                    <RegexExtractVariableID>522501</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819327</stateID>
+                <command>show run | sec aaa</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684654</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522495</RegexExtractVariableID>
+                    <RegexExtractVariableID>522496</RegexExtractVariableID>
+                    <RegexExtractVariableID>522497</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819329</stateID>
+                <command>show run | in username</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684648</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522481</RegexExtractVariableID>
+                    <RegexExtractVariableID>522482</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819335</stateID>
+                <command>show ntp status | in sync</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684637</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522464</RegexExtractVariableID>
+                    <RegexExtractVariableID>522465</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819318</stateID>
+                <command>show run | in enable secret</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684653</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522494</RegexExtractVariableID>
+                    <RegexExtractVariableID>522493</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819330</stateID>
+                <command>show run | in security password</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684658</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522504</RegexExtractVariableID>
+                    <RegexExtractVariableID>522505</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819325</stateID>
+                <command>show run | in service password</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684638</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522467</RegexExtractVariableID>
+                    <RegexExtractVariableID>522466</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819317</stateID>
+                <command>show run | in ip http server</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684649</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522483</RegexExtractVariableID>
+                    <RegexExtractVariableID>522484</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819334</stateID>
+                <command>show run | in access-list 15</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684644</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522473</RegexExtractVariableID>
+                    <RegexExtractVariableID>522474</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819339</stateID>
+                <command>show access-lists 38</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684657</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522502</RegexExtractVariableID>
+                    <RegexExtractVariableID>522503</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819326</stateID>
+                <command>show run | in timestamps log</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684655</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522498</RegexExtractVariableID>
+                    <RegexExtractVariableID>522499</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819328</stateID>
+                <command>show run | in tacacs-server host</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684650</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522487</RegexExtractVariableID>
+                    <RegexExtractVariableID>522485</RegexExtractVariableID>
+                    <RegexExtractVariableID>522486</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819333</stateID>
+                <command>show run | in snmp.*RO</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684636</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522462</RegexExtractVariableID>
+                    <RegexExtractVariableID>522463</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819319</stateID>
+                <command>show int desc | in down</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684639</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522468</RegexExtractVariableID>
+                    <RegexExtractVariableID>522469</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819316</stateID>
+                <command>show run | in ip bootp</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684647</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522479</RegexExtractVariableID>
+                    <RegexExtractVariableID>522480</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819336</stateID>
+                <command>show run | sec line con 0</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684645</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522476</RegexExtractVariableID>
+                    <RegexExtractVariableID>522475</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819338</stateID>
+                <command>show run | sec line vty</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684646</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522477</RegexExtractVariableID>
+                    <RegexExtractVariableID>522478</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819337</stateID>
+                <command>show run | sec line aux</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684659</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522506</RegexExtractVariableID>
+                    <RegexExtractVariableID>522507</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819324</stateID>
+                <command>show run | in tcp-keep</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684634</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522459</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819321</stateID>
+                <command>terminal length 0</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>10</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684635</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522461</RegexExtractVariableID>
+                    <RegexExtractVariableID>522460</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819320</stateID>
+                <command>show int desc | ex down</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>684660</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522509</RegexExtractVariableID>
+                    <RegexExtractVariableID>522508</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819323</stateID>
+                <command>show run | in logging buffered</command>
+                <connectionName>affected_host</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>15</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+        </HostCommandActions>
+        <LinkActions/>
+        <LockTicketActions/>
+        <RfcActions/>
+        <ScriptActions>
+            <ScriptAction>
+                <actionID>684641</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>522472</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>819340</stateID>
+                <script>importPackage(net.ipsoft.ipcenter.framework.velocity);
+function setVar (name, value) {
+    execution.getExecutionVariableForScope(name, executionPointer.getCurrentScope()).setValue(value);
+}
+
+/* ================================================== */
+/* Up interfaces description check */
+if ( devhostname1.match(/^DC|^CS|^CR/gi) ) {
+setVar('int_desc_chk','PASS');
+}
+else {
+ if ( ! int_desc_out.match(/\w+/gi) ) {
+  setVar('int_desc_chk','PASS');
+ }
+}
+/* ================================================== */
+
+/* Down interfaces description check */
+if ( devhostname1.match(/^DC|^CS|^CR/gi) ) {
+setVar('int_down_chk','PASS');
+}
+else {
+     if ( ! int_down_out.match(/\w+/gi) ) {
+setVar('int_down_chk','PASS');
+}
+}
+/* ================================================== */
+
+/* Secret Password check */
+if ( secret_out.match(/enable secret/gi) ) {
+setVar('secret_chk','PASS');
+}
+
+/* ================================================== */
+
+/* HTTP check */
+if ( http_out.match(/no/gi) ) {
+setVar('http_chk','PASS');
+}
+
+/* ================================================== */
+
+/* BootP check */
+if ( bootp_out.match(/no/gi) ) {
+setVar('bootp_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Source Route check */
+if ( srcrt_out.match(/no/gi) ) {
+setVar('srcrt_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Logging check */
+if ( lgg_out.match(/\d+\.\d+\.\d+\.\d+/gi) ) {
+setVar('lgg_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Logging Buffer check */
+if ( lgbfr_out.match(/.*/gi) ) {
+setVar('lgbfr_chk','PASS');
+}
+
+/* ================================================== */
+
+/* TCP keep alive check */
+if ( tcp_out.match(/no/gi) ) {
+setVar('tcp_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Encryption check */
+if ( encry_out.match(/service password-encryption/gi) ) {
+setVar('encry_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Time stamp check */
+if ( tmst_out.match(/no/gi) ) {
+setVar('tmst_chk','FAIL');
+}
+
+/* ================================================== */
+
+/* AAA check */
+if (aaa_out.match(/aaa authentication login vty group tacacs\+ local/gi) &amp;&amp; aaa_out.match(/aaa authentication login con none/gi) &amp;&amp; aaa_out.match(/aaa authorization exec vty group tacacs\+ local/gi) &amp;&amp; aaa_out.match(/aaa authorization exec con none/gi) &amp;&amp; aaa_out.match(/aaa authorization commands 1 vty group tacacs\+ local/gi) &amp;&amp; aaa_out.match(/aaa authorization commands 15 vty group tacacs\+ local if\-authenticated/gi) &amp;&amp; aaa_out.match(/aaa accounting exec vty start\-stop group tacacs\+/gi)  &amp;&amp; aaa_out.match(/aaa accounting commands 1 vty start\-stop group tacacs\+/gi)  &amp;&amp; aaa_out.match(/aaa accounting commands 15 vty start\-stop group tacacs\+/gi)  &amp;&amp; aaa_out.match(/aaa session\-id common/gi))
+{
+setVar('aaa_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Tacacs server host check */
+if ( tcsrv_out.match(/\w+/gi) ) {
+setVar('tcsrv_chk','PASS');
+}
+
+/* ================================================== */
+
+/* User check */
+if ( usr_out1.match(/Indosat privilege 15 secret/gi) &amp;&amp; ! usr_out2.match(/\w+/gi) )
+{
+setVar('usr_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Pwd minlen check */
+if ( minlen_out.match(/no/gi) ) {
+setVar('minlen_chk','PASS');
+}
+
+/* ================================================== */
+
+/* SNMP RW check */
+if ( snmprw_out1.match(/\s+RW\s+/gi) &amp;&amp; ! snmprw_out2.match(/\w+/gi) )
+{
+setVar('snmprw_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Banner - MOTD check */
+if ( motd_out.match(/banner motd/gi) &amp;&amp; motd_out.match(/UNAUTHORIZED ACCESS STRICTLY FORBIDDEN/gi) &amp;&amp; motd_out.match(/not authorized/gi) &amp;&amp; motd_out.match(/Disconnect immediately/gi) &amp;&amp; motd_out.match(/Violators/gi) &amp;&amp; motd_out.match(/prosecuted/gi) &amp;&amp; motd_out.match(/Civil/gi) &amp;&amp; motd_out.match(/Criminal law/gi))
+{
+setVar('motd_chk','PASS');
+}
+
+/* ================================================== */
+
+/* SNMP RO Check */
+var snmpro_out_len = snmpro_out1;
+snmpro_out_len = snmpro_out_len.replace('snmp-server community (miyamoto|mushashi|brabus|isat-wips) ','');
+snmpro_out_len = snmpro_out_len.replace(' RO (1|5)','');
+var snmpro_len = snmpro_out_len.length;
+snmpro_len;
+
+if ( snmpro_out1.match(/\w+/gi) &amp;&amp; ! snmpro_out2.match(/\s+RW/g))
+{
+setVar('snmpro_chk','PASS');
+}
+
+/* ================================================== */
+
+/* ACL 15 check */
+if ( acl15_out.match(/permit/gi) )
+{
+setVar('acl15_chk','FAIL');
+}
+
+/* ================================================== */
+
+/* NTP check */
+if ( ntp_out.match(/no|sync/gi) ) {
+setVar('ntp_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Line console check */
+if ( ! lincon_out.match(/no/gi) ) {
+setVar('lincon_chk','FAIL');
+}
+
+/* ================================================== */
+
+/* Line AUX check */
+if ( linaux_out.match(/line aux 0/gi) || linaux_out.match(/stopbits 1/gi) ) {
+setVar('linaux_chk','PASS');
+}
+
+/* ================================================== */
+
+/* Line VTY check */
+if ( linvty1_out.match(/line vty 0 4\s*\n.*\s*privilege level 15/gi) ) {
+setVar('linvty_chk','PASS');
+}
+
+/* ================================================== */
+
+/* ACL 38 check */
+if ( ! acl38_out.match(/no/gi) ) {
+setVar('acl38_chk','FAIL');
+}
+
+/* ================================================== */
+/* The end */
+/* SHC output for storage */
+var a = int_desc_all + "\n\n" + int_desc_down + "\n\n" + en_sec_all + "\n\n" + iphttp_all + "\n\n" + ipbootp_all + "\n\n" + ipsrc_all + "\n\n" + logg_all + "\n\n" + loggbuffer_all + "\n\n" + tcpkeep_all + "\n\n" + srcpwd_all + "\n\n" + timestamp_all + "\n\n" + secaaa_all + "\n\n" + serhost_all + "\n\n" + usr_all + "\n\n" + secpwd_all + "\n\n" + snmp_all + "\n\n" + motd_all + "\n\n" + snmpro_all + "\n\n" + acl_all + "\n\n" + ntpass_all + "\n\n" + lincon_all + "\n\n" + linaux_all + "\n\n" + linvty_all + "\n\n" + acl38_all;
+setVar('shc_output',a);
+
+/* Final output */
+var component_output='&lt;tr&gt;&lt;td&gt;' + affected_host + '&lt;/td&gt;&lt;td&gt;' + int_desc_chk + '&lt;/td&gt;&lt;td&gt;' + int_down_chk + '&lt;/td&gt;&lt;td&gt;' + secret_chk + '&lt;/td&gt;&lt;td&gt;' + http_chk + '&lt;/td&gt;&lt;td&gt;' + bootp_chk + '&lt;/td&gt;&lt;td&gt;' + srcrt_chk + '&lt;/td&gt;&lt;td&gt;' + lgg_chk + '&lt;/td&gt;&lt;td&gt;' + lgbfr_chk + '&lt;/td&gt;&lt;td&gt;' + tcp_chk + '&lt;/td&gt;&lt;td&gt;' + encry_chk + '&lt;/td&gt;&lt;td&gt;' + tmst_chk + '&lt;/td&gt;&lt;td&gt;' + aaa_chk + '&lt;/td&gt;&lt;td&gt;' + tcsrv_chk + '&lt;/td&gt;&lt;td&gt;' + usr_chk + '&lt;/td&gt;&lt;td&gt;' + minlen_chk + '&lt;/td&gt;&lt;td&gt;' + snmprw_chk + '&lt;/td&gt;&lt;td&gt;' + motd_chk + '&lt;/td&gt;&lt;td&gt;' + snmpro_chk + '&lt;/td&gt;&lt;td&gt;' + acl15_chk + '&lt;/td&gt;&lt;td&gt;' + ntp_chk + '&lt;/td&gt;&lt;td&gt;' + lincon_chk + '&lt;/td&gt;&lt;td&gt;' + linaux_chk + '&lt;/td&gt;&lt;td&gt;' + linvty_chk + '&lt;/td&gt;&lt;td&gt;' + acl38_chk + '&lt;/td&gt;&lt;/tr&gt;';
+component_output;</script>
+            </ScriptAction>
+        </ScriptActions>
+        <WaitForRecoveryIPmonActions/>
+        <GenericTicketEventWaitActions/>
+        <AckProblemIPmonActions/>
+        <CancelDowntimeIPmonActions/>
+        <ExecuteCheckIPmonActions/>
+        <ScheduleDowntimeIPmonActions/>
+        <PhoneCallActions/>
+        <TimedWaitActions/>
+        <UpdateTicketActions/>
+        <SubmitPassiveIPmonActionDetails/>
+        <HttpRequestActions/>
+        <IPdiscoverActions/>
+        <ExecuteIPadminActions/>
+        <SQLCommandActions/>
+        <NotifyActions/>
+        <ForkStates/>
+        <FormStates/>
+        <JoinStates/>
+        <LinkStates/>
+        <NoopStates/>
+        <NormalStates>
+            <NormalState>
+                <actionID>684640</actionID>
+                <name>show run | in ip source</name>
+                <originalID>692461</originalID>
+                <stateID>819315</stateID>
+                <XPos>206</XPos>
+                <YPos>661</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684651</actionID>
+                <name>show run | be motd</name>
+                <originalID>692450</originalID>
+                <stateID>819332</stateID>
+                <XPos>626</XPos>
+                <YPos>161</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684652</actionID>
+                <name>show run | in snmp.*RW</name>
+                <originalID>692451</originalID>
+                <stateID>819331</stateID>
+                <XPos>406</XPos>
+                <YPos>161</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684661</actionID>
+                <name>show run | in logging</name>
+                <originalID>692460</originalID>
+                <stateID>819314</stateID>
+                <XPos>206</XPos>
+                <YPos>751</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684641</actionID>
+                <name>regex check and output setting</name>
+                <originalID>696184</originalID>
+                <stateID>819340</stateID>
+                <XPos>791</XPos>
+                <YPos>858</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684656</actionID>
+                <name>show run | sec aaa</name>
+                <originalID>692455</originalID>
+                <stateID>819327</stateID>
+                <XPos>406</XPos>
+                <YPos>561</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684654</actionID>
+                <name>show run | in username</name>
+                <originalID>692453</originalID>
+                <stateID>819329</stateID>
+                <XPos>406</XPos>
+                <YPos>351</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684648</actionID>
+                <name>show ntp status | in sync</name>
+                <originalID>692469</originalID>
+                <stateID>819335</stateID>
+                <XPos>625</XPos>
+                <YPos>452</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684637</actionID>
+                <name>show run | in enable secret</name>
+                <originalID>692464</originalID>
+                <stateID>819318</stateID>
+                <XPos>207</XPos>
+                <YPos>354</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684653</actionID>
+                <name>show run | in security password</name>
+                <originalID>692452</originalID>
+                <stateID>819330</stateID>
+                <XPos>406</XPos>
+                <YPos>261</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684633</actionID>
+                <name>Declare Vars</name>
+                <originalID>692468</originalID>
+                <stateID>819322</stateID>
+                <XPos>351</XPos>
+                <YPos>34</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684658</actionID>
+                <name>show run | in service password</name>
+                <originalID>692457</originalID>
+                <stateID>819325</stateID>
+                <XPos>406</XPos>
+                <YPos>751</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684638</actionID>
+                <name>show run | in ip http server</name>
+                <originalID>692463</originalID>
+                <stateID>819317</stateID>
+                <XPos>205</XPos>
+                <YPos>451</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684649</actionID>
+                <name>show run | in access-list 15</name>
+                <originalID>692448</originalID>
+                <stateID>819334</stateID>
+                <XPos>626</XPos>
+                <YPos>351</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684644</actionID>
+                <name>show access-lists 38</name>
+                <originalID>692473</originalID>
+                <stateID>819339</stateID>
+                <XPos>626</XPos>
+                <YPos>858</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684657</actionID>
+                <name>show run | in timestamps log</name>
+                <originalID>692456</originalID>
+                <stateID>819326</stateID>
+                <XPos>406</XPos>
+                <YPos>661</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684655</actionID>
+                <name>show run | in tacacs-server host</name>
+                <originalID>692454</originalID>
+                <stateID>819328</stateID>
+                <XPos>406</XPos>
+                <YPos>451</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684650</actionID>
+                <name>show run | in snmp.*RO</name>
+                <originalID>692449</originalID>
+                <stateID>819333</stateID>
+                <XPos>626</XPos>
+                <YPos>261</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684636</actionID>
+                <name>show int desc | in down</name>
+                <originalID>692465</originalID>
+                <stateID>819319</stateID>
+                <XPos>206</XPos>
+                <YPos>261</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684639</actionID>
+                <name>show run | in ip bootp</name>
+                <originalID>692462</originalID>
+                <stateID>819316</stateID>
+                <XPos>206</XPos>
+                <YPos>561</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684647</actionID>
+                <name>show run | sec line con 0</name>
+                <originalID>692470</originalID>
+                <stateID>819336</stateID>
+                <XPos>626</XPos>
+                <YPos>561</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684645</actionID>
+                <name>show run | sec line vty</name>
+                <originalID>692472</originalID>
+                <stateID>819338</stateID>
+                <XPos>626</XPos>
+                <YPos>751</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684646</actionID>
+                <name>show run | sec line aux</name>
+                <originalID>692471</originalID>
+                <stateID>819337</stateID>
+                <XPos>626</XPos>
+                <YPos>661</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684659</actionID>
+                <name>show run | in tcp-keep</name>
+                <originalID>692458</originalID>
+                <stateID>819324</stateID>
+                <XPos>406</XPos>
+                <YPos>851</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684642</actionID>
+                <name>trim component_output</name>
+                <originalID>788083</originalID>
+                <stateID>819342</stateID>
+                <XPos>781</XPos>
+                <YPos>502</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684634</actionID>
+                <name>term len 0</name>
+                <originalID>692467</originalID>
+                <stateID>819321</stateID>
+                <XPos>206</XPos>
+                <YPos>34</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684635</actionID>
+                <name>show int desc | ex down</name>
+                <originalID>692466</originalID>
+                <stateID>819320</stateID>
+                <XPos>206</XPos>
+                <YPos>161</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684643</actionID>
+                <name>set component_output</name>
+                <originalID>708159</originalID>
+                <stateID>819341</stateID>
+                <XPos>789</XPos>
+                <YPos>665</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>684660</actionID>
+                <name>show run | in logging buffered</name>
+                <originalID>692459</originalID>
+                <stateID>819323</stateID>
+                <XPos>206</XPos>
+                <YPos>851</YPos>
+            </NormalState>
+        </NormalStates>
+        <SuccessStates>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>692474</originalID>
+                <stateID>819343</stateID>
+                <XPos>778</XPos>
+                <YPos>377</YPos>
+            </SuccessState>
+        </SuccessStates>
+        <WaitStates/>
+        <Transitions>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>780,486:780,476:780,475:778,475:778,403:778,393</connectorLayout>
+                <fromStateID>819342</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>Ok</name>
+                <toStateID>819343</toStateID>
+                <transitionID>920495</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,767:626,777:626,777:626,777:626,832:626,842</connectorLayout>
+                <fromStateID>819338</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819339</toStateID>
+                <transitionID>920499</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,577:626,587:626,611:626,611:626,635:626,645</connectorLayout>
+                <fromStateID>819336</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819337</toStateID>
+                <transitionID>920501</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,767:206,777:206,801:206,801:206,825:206,835</connectorLayout>
+                <fromStateID>819314</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819323</toStateID>
+                <transitionID>920515</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,435:406,425:406,401:406,401:406,377:406,367</connectorLayout>
+                <fromStateID>819328</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819329</toStateID>
+                <transitionID>920509</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>205,467:205,477:205,506:206,506:206,535:206,545</connectorLayout>
+                <fromStateID>819317</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819316</toStateID>
+                <transitionID>920492</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,177:626,187:626,211:626,211:626,235:626,245</connectorLayout>
+                <fromStateID>819332</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819333</toStateID>
+                <transitionID>920505</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,577:206,587:206,611:206,611:206,635:206,645</connectorLayout>
+                <fromStateID>819316</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819315</toStateID>
+                <transitionID>920493</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,50:206,60:206,60:206,60:206,135:206,145</connectorLayout>
+                <fromStateID>819321</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819320</toStateID>
+                <transitionID>920488</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,645:406,635:406,611:406,611:406,587:406,577</connectorLayout>
+                <fromStateID>819326</fromStateID>
+                <labelLayout>7:0:1:42</labelLayout>
+                <name>ok</name>
+                <toStateID>819327</toStateID>
+                <transitionID>920511</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,735:406,725:406,706:406,706:406,687:406,677</connectorLayout>
+                <fromStateID>819325</fromStateID>
+                <labelLayout>-4:0:1:63</labelLayout>
+                <name>ok</name>
+                <toStateID>819326</toStateID>
+                <transitionID>920512</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,177:206,187:206,211:206,211:206,235:206,245</connectorLayout>
+                <fromStateID>819320</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819319</toStateID>
+                <transitionID>920489</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,677:626,687:626,706:626,706:626,725:626,735</connectorLayout>
+                <fromStateID>819337</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819338</toStateID>
+                <transitionID>920500</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>207,370:207,380:205,380:205,380:205,425:205,435</connectorLayout>
+                <fromStateID>819318</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819317</toStateID>
+                <transitionID>920491</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,277:626,287:626,306:626,306:626,325:626,335</connectorLayout>
+                <fromStateID>819333</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819334</toStateID>
+                <transitionID>920504</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,335:406,325:406,306:406,306:406,287:406,277</connectorLayout>
+                <fromStateID>819329</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819330</toStateID>
+                <transitionID>920508</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>true</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>229,34:239,34:239,34:239,34:319,34:329,34</connectorLayout>
+                <fromStateID>819321</fromStateID>
+                <labelLayout>0:1:3:45</labelLayout>
+                <name>never</name>
+                <toStateID>819322</toStateID>
+                <transitionID>920487</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>791,843:791,833:791,833:789,833:789,691:789,681</connectorLayout>
+                <fromStateID>819340</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819341</toStateID>
+                <transitionID>920497</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>429,161:439,161:516,161:516,161:594,161:604,161</connectorLayout>
+                <fromStateID>819331</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819332</toStateID>
+                <transitionID>920506</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,677:206,687:206,706:206,706:206,725:206,735</connectorLayout>
+                <fromStateID>819315</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819314</toStateID>
+                <transitionID>920494</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>789,650:789,640:780,640:780,640:780,527:780,517</connectorLayout>
+                <fromStateID>819341</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819342</toStateID>
+                <transitionID>920496</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>206,277:206,287:207,287:207,287:207,328:207,338</connectorLayout>
+                <fromStateID>819319</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819318</toStateID>
+                <transitionID>920490</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>625,468:625,478:625,506:626,506:626,535:626,545</connectorLayout>
+                <fromStateID>819335</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819336</toStateID>
+                <transitionID>920502</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,835:406,825:406,801:406,801:406,777:406,767</connectorLayout>
+                <fromStateID>819324</fromStateID>
+                <labelLayout>-2:0:1:62</labelLayout>
+                <name>ok</name>
+                <toStateID>819325</toStateID>
+                <transitionID>920513</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>229,851:239,851:306,851:306,851:374,851:384,851</connectorLayout>
+                <fromStateID>819323</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819324</toStateID>
+                <transitionID>920514</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,545:406,535:406,506:406,506:406,477:406,467</connectorLayout>
+                <fromStateID>819327</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819328</toStateID>
+                <transitionID>920510</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>649,858:659,858:659,858:659,858:759,858:769,858</connectorLayout>
+                <fromStateID>819339</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819340</toStateID>
+                <transitionID>920498</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,245:406,235:406,235:406,235:406,187:406,177</connectorLayout>
+                <fromStateID>819330</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819331</toStateID>
+                <transitionID>920507</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E|\Q$\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>626,367:626,377:625,377:625,377:625,426:625,436</connectorLayout>
+                <fromStateID>819334</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>819335</toStateID>
+                <transitionID>920503</transitionID>
+            </Transition>
+        </Transitions>
+        <TicketMatchers/>
+        <Tags/>
+    </automaton>
+    <timeOfExport>2017-06-28T07:33:16.656Z</timeOfExport>
+</automatonExport>

@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<automatonExport>
+    <automaton>
+        <approvalNotes>https://hub.jazz.net/ccm06/quickplanner/jazzhub.html#items:projectId=_F_H7VnfoEeSi-OIwg-tlIA&amp;serverId=hub.jazz.net&amp;planType=mywork&amp;allIterations=true&amp;itemId=31871&#xD;
+&#xD;
+&#xD;
+Email Id Changed to aautomat@in.ibm.com&#xD;
+</approvalNotes>
+        <approvalStatus>APPROVED</approvalStatus>
+        <automaticDelaySeconds>60</automaticDelaySeconds>
+        <created>2015-10-21T08:02:35Z</created>
+        <Category>
+            <categoryID>1287</categoryID>
+            <clientID>33</clientID>
+            <name>Diagnosis</name>
+            <parent>
+                <categoryID>1285</categoryID>
+                <clientID>33</clientID>
+                <name>Components</name>
+                <parent>
+                    <categoryID>377</categoryID>
+                    <clientID>33</clientID>
+                    <name>Network Management</name>
+                </parent>
+            </parent>
+        </Category>
+        <automatonID>22116</automatonID>
+        <executionMode>MANUAL</executionMode>
+        <isLive>true</isLive>
+        <isMasterTicketOnly>true</isMasterTicketOnly>
+        <matchType>AND</matchType>
+        <modified>2016-03-01T05:27:22Z</modified>
+        <name>TBK:NTW:CIS:D:C:Switch uptime check</name>
+        <purpose>DIAGNOSIS</purpose>
+        <newExecutionThrottleCount>0</newExecutionThrottleCount>
+        <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+        <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+        <engineerTimeToRemediate>0</engineerTimeToRemediate>
+        <ConstantVariables>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>lsUsername</name>
+                <secure>false</secure>
+                <variableID>235314</variableID>
+                <value>&lt;![CDATA[NWDAIPCENTER]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>mycounter</name>
+                <secure>false</secure>
+                <variableID>235309</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>endpoint_username</name>
+                <secure>false</secure>
+                <variableID>235322</variableID>
+                <value>&lt;![CDATA[NWDAIPCENTER]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>system_name</name>
+                <secure>false</secure>
+                <variableID>235317</variableID>
+                <value>&lt;![CDATA[NWDAIPCENTER]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>ssh_output</name>
+                <secure>false</secure>
+                <variableID>235315</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>from_email</name>
+                <secure>false</secure>
+                <variableID>235319</variableID>
+                <value>&lt;![CDATA[tbk@ipctrmel02.com]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>lsStatus</name>
+                <secure>false</secure>
+                <variableID>235318</variableID>
+                <value>&lt;![CDATA[1]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>endpoint_username2</name>
+                <secure>false</secure>
+                <variableID>235313</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>component_output</name>
+                <secure>false</secure>
+                <variableID>235308</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>lsPassword</name>
+                <secure>true</secure>
+                <variableID>235323</variableID>
+                <value>&lt;![CDATA[R11PK89ZSPn0dayxD9mYOg==]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>lsAction</name>
+                <secure>false</secure>
+                <variableID>235311</variableID>
+                <value>&lt;![CDATA[get]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>connect_error</name>
+                <secure>false</secure>
+                <variableID>235304</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>lsFolderName</name>
+                <secure>false</secure>
+                <variableID>235320</variableID>
+                <value>&lt;![CDATA[IBM-TBK]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>jumpbox</name>
+                <secure>false</secure>
+                <variableID>235305</variableID>
+                <value>&lt;![CDATA[198.18.125.34]]&gt;</value>
+            </ConstantVariable>
+            <ConstantVariable>
+                <automatonID>22116</automatonID>
+                <name>loginid</name>
+                <secure>false</secure>
+                <variableID>235321</variableID>
+                <value>&lt;![CDATA[tbd]]&gt;</value>
+            </ConstantVariable>
+        </ConstantVariables>
+        <FormVariables/>
+        <RegexExtractVariables>
+            <RegexExtractVariable>
+                <automatonID>22116</automatonID>
+                <name>p_out</name>
+                <secure>false</secure>
+                <variableID>235310</variableID>
+                <actionID>310833</actionID>
+                <field>OUT</field>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>22116</automatonID>
+                <name>Last_return_type_switch</name>
+                <secure>false</secure>
+                <variableID>235306</variableID>
+                <actionID>310823</actionID>
+                <field>OUT</field>
+                <filterPattern>.*ROM by.*</filterPattern>
+                <matchPattern>.*System returned to ROM by ([\w\-]+).*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+            <RegexExtractVariable>
+                <automatonID>22116</automatonID>
+                <name>uptime_out_switch</name>
+                <secure>false</secure>
+                <variableID>235307</variableID>
+                <actionID>310823</actionID>
+                <field>OUT</field>
+                <filterPattern>.*uptime.*</filterPattern>
+                <matchPattern>.*uptime is (\d+) minutes.*</matchPattern>
+                <replacePattern>$1</replacePattern>
+            </RegexExtractVariable>
+        </RegexExtractVariables>
+        <RuntimeVariables>
+            <RuntimeVariable>
+                <automatonID>22116</automatonID>
+                <defaultValue>enter switch ip</defaultValue>
+                <name>host_name_element</name>
+                <secure>false</secure>
+                <variableID>235316</variableID>
+                <prompt>true</prompt>
+                <required>true</required>
+            </RuntimeVariable>
+            <RuntimeVariable>
+                <automatonID>22116</automatonID>
+                <defaultValue>aautomat@in.ibm.com</defaultValue>
+                <name>alert_email_list</name>
+                <secure>false</secure>
+                <variableID>235312</variableID>
+                <prompt>true</prompt>
+                <required>true</required>
+            </RuntimeVariable>
+        </RuntimeVariables>
+        <ScriptExtractVariables/>
+        <Connections>
+            <Connection>
+                <name>jumpbox</name>
+                <hostOverrideVar>jumpbox</hostOverrideVar>
+                <ipmonOverrideVar></ipmonOverrideVar>
+                <connectionClientCode>tbk</connectionClientCode>
+                <connectionProtocol>SSH</connectionProtocol>
+                <connectionHost>198.18.125.34</connectionHost>
+                <backupConnectionClientCode>tbk</backupConnectionClientCode>
+                <backupConnectionHost>198.18.125.35</backupConnectionHost>
+                <backupConnectionProtocol>SSH</backupConnectionProtocol>
+            </Connection>
+        </Connections>
+        <CMDBAssociateActions/>
+        <CMDBQueryActions/>
+        <EditVariableActions>
+            <EditVariableAction>
+                <actionID>310824</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377166</stateID>
+                <refresh>false</refresh>
+                <script>component_output+="\n\n";
+component_output+="The network device (related neighbor) was down in the last 10 minutes.\n";
+component_output+="Please find details below.\n";
+component_output+="Last Return type observed is: " + Last_return_type_switch + "\n";
+component_output+="Uptime Out observed is: " + uptime_out_switch + "\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>235308</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310816</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377154</stateID>
+                <refresh>false</refresh>
+                <script>connect_error="Situation - In jumpbox but cannot get to "+ jumpbox +"\n";
+connect_error;</script>
+                <EditVariableTransforms/>
+                <variableID>235304</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310825</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377165</stateID>
+                <refresh>false</refresh>
+                <script>var red = 1;
+red;</script>
+                <EditVariableTransforms/>
+                <variableID>235309</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310819</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377148</stateID>
+                <refresh>false</refresh>
+                <script>connect_error="Situation - Cannot get to jumpbox while trying to get to "+ jumpbox +"\n";
+connect_error;</script>
+                <EditVariableTransforms/>
+                <variableID>235304</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310828</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377160</stateID>
+                <refresh>false</refresh>
+                <EditVariableTransforms>
+                    <EditVariableTransform>
+                        <arguments/>
+                        <transformMethodID>29</transformMethodID>
+                    </EditVariableTransform>
+                </EditVariableTransforms>
+                <variableID>235307</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310829</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377159</stateID>
+                <refresh>false</refresh>
+                <EditVariableTransforms>
+                    <EditVariableTransform>
+                        <arguments/>
+                        <transformMethodID>29</transformMethodID>
+                    </EditVariableTransform>
+                </EditVariableTransforms>
+                <variableID>235306</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310826</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377163</stateID>
+                <refresh>false</refresh>
+                <script>var red = 0;
+red;</script>
+                <EditVariableTransforms/>
+                <variableID>235309</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310821</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377142</stateID>
+                <refresh>false</refresh>
+                <script>affected_host = host_name_element;
+affected_host;</script>
+                <EditVariableTransforms/>
+                <variableID>235305</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310812</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377145</stateID>
+                <refresh>false</refresh>
+                <script>"";</script>
+                <EditVariableTransforms/>
+                <variableID>235304</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310814</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377152</stateID>
+                <refresh>false</refresh>
+                <script>connect_error="Situation - In jumpbox but cannot get to "+ jumpbox +" as ssh is still asking for password\n";
+connect_error;</script>
+                <EditVariableTransforms/>
+                <variableID>235304</variableID>
+            </EditVariableAction>
+            <EditVariableAction>
+                <actionID>310827</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377162</stateID>
+                <refresh>false</refresh>
+                <script>component_output+="\n\n";
+component_output+="The network device has been up and running for more than 10 minutes\n";
+component_output+="No further action is required. Exiting\n";
+component_output;</script>
+                <EditVariableTransforms/>
+                <variableID>235308</variableID>
+            </EditVariableAction>
+        </EditVariableActions>
+        <EmailActions>
+            <EmailAction>
+                <actionID>310811</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377147</stateID>
+                <body>${connect_error}
+${endpoint_username2}
+${loginid}
+${mycounter}
+${component_output}
+${host_name_element}</body>
+                <from>@</from>
+                <subject>@</subject>
+                <to>@</to>
+            </EmailAction>
+            <EmailAction>
+                <actionID>310815</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377151</stateID>
+                <body>Cannot reach ${jumpbox} 
+
+Failed at ssh password input to ${jumpbox}
+
+Detailed_output: 
+${ssh_output}
+
+Sent by ${automaton.name}
+</body>
+                <cc></cc>
+                <from>${from_email}</from>
+                <subject>ATTN: ${lsFolderName} : In jumpbox but cannot get to ${jumpbox}</subject>
+                <to>${alert_email_list}</to>
+            </EmailAction>
+            <EmailAction>
+                <actionID>310817</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377153</stateID>
+                <body>Cannot reach ${jumpbox} 
+
+Failed at ssh to ${jumpbox}
+
+Detailed_output: 
+${ssh_output}
+
+Sent by ${automaton.name}
+</body>
+                <cc></cc>
+                <from>${from_email}</from>
+                <subject>ATTN: ${lsFolderName} : In jumpbox but cannot get to ${jumpbox}</subject>
+                <to>${alert_email_list}</to>
+            </EmailAction>
+            <EmailAction>
+                <actionID>310818</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377149</stateID>
+                <body>ATTN: ${lsFolderName}: Cannot get to jumpbox while trying to get to "${jumpbox}"
+
+Sent by ${automaton.name}
+</body>
+                <cc></cc>
+                <from>${from_email}</from>
+                <subject>ATTN: ${lsFolderName}: Cannot connect to jumpbox</subject>
+                <to>${alert_email_list}</to>
+            </EmailAction>
+        </EmailActions>
+        <FormActions/>
+        <HostCommandActions>
+            <HostCommandAction>
+                <actionID>310823</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>235307</RegexExtractVariableID>
+                    <RegexExtractVariableID>235306</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>377158</stateID>
+                <command>show version</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310832</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377155</stateID>
+                <command>en</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310830</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377157</stateID>
+                <command>term len 0</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310820</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377143</stateID>
+                <command>hostname</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310822</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377141</stateID>
+                <command>ssh -o StrictHostKeyChecking=no ${endpoint_username}@${jumpbox}</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310831</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377156</stateID>
+                <command>${lsPassword}</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>true</trim>
+            </HostCommandAction>
+            <HostCommandAction>
+                <actionID>310833</actionID>
+                <RegexExtractVariableIDs>
+                    <RegexExtractVariableID>235310</RegexExtractVariableID>
+                </RegexExtractVariableIDs>
+                <ScriptExtractVariableIDs/>
+                <stateID>377140</stateID>
+                <command>${lsPassword}</command>
+                <connectionName>jumpbox</connectionName>
+                <hardTimeoutSeconds>60</hardTimeoutSeconds>
+                <resetPrompt>false</resetPrompt>
+                <secureStderr>false</secureStderr>
+                <secureStdout>false</secureStdout>
+                <timeoutSeconds>5</timeoutSeconds>
+                <trim>false</trim>
+            </HostCommandAction>
+        </HostCommandActions>
+        <LinkActions>
+            <LinkAction>
+                <actionID>310813</actionID>
+                <RegexExtractVariableIDs/>
+                <ScriptExtractVariableIDs/>
+                <stateID>377144</stateID>
+                <spawnable>false</spawnable>
+                <inline>true</inline>
+                <LinkActionOverrides>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297400</linkActionOverrideID>
+                        <name>elementId</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297401</linkActionOverrideID>
+                        <name>elementName</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297402</linkActionOverrideID>
+                        <name>elementTypeAttributeId</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297403</linkActionOverrideID>
+                        <name>elementTypeId</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297404</linkActionOverrideID>
+                        <name>folderId</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297405</linkActionOverrideID>
+                        <name>jsonBody</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297406</linkActionOverrideID>
+                        <name>locksmithpassword</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297407</linkActionOverrideID>
+                        <name>lsAction</name>
+                        <overrideType>VARIABLE_IN</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297408</linkActionOverrideID>
+                        <name>lsFolderName</name>
+                        <overrideType>VARIABLE_IN</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297409</linkActionOverrideID>
+                        <name>lsPassword</name>
+                        <overrideType>VARIABLE_OUT</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297410</linkActionOverrideID>
+                        <name>lsRandomPassword</name>
+                        <overrideType>NONE</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297411</linkActionOverrideID>
+                        <name>lsStatus</name>
+                        <overrideType>VARIABLE_OUT</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297412</linkActionOverrideID>
+                        <name>lsUsername</name>
+                        <overrideType>VARIABLE_IN</overrideType>
+                    </LinkActionOverride>
+                    <LinkActionOverride>
+                        <linkActionOverrideID>297413</linkActionOverrideID>
+                        <name>system_name</name>
+                        <overrideType>VARIABLE_IN</overrideType>
+                    </LinkActionOverride>
+                </LinkActionOverrides>
+                <automaton>
+                    <approvalNotes>Change no: 649053 for resetting password of IPAutomata and Admin in Locksmith</approvalNotes>
+                    <approvalStatus>APPROVED</approvalStatus>
+                    <automaticDelaySeconds>60</automaticDelaySeconds>
+                    <created>2014-12-05T13:39:39Z</created>
+                    <Category>
+                        <categoryID>76</categoryID>
+                        <clientID>18</clientID>
+                        <name>Components</name>
+                        <parent>
+                            <categoryID>6</categoryID>
+                            <clientID>18</clientID>
+                            <name>CSI Department</name>
+                        </parent>
+                    </Category>
+                    <automatonID>40747</automatonID>
+                    <executionMode>MANUAL</executionMode>
+                    <isLive>true</isLive>
+                    <isMasterTicketOnly>true</isMasterTicketOnly>
+                    <matchType>AND</matchType>
+                    <modified>2017-01-16T15:41:00Z</modified>
+                    <name>IPlockmith v2.1</name>
+                    <purpose>DIAGNOSIS</purpose>
+                    <newExecutionThrottleCount>0</newExecutionThrottleCount>
+                    <newExecutionThrottlePeriodSeconds>0</newExecutionThrottlePeriodSeconds>
+                    <engineerTimeToDiagnose>0</engineerTimeToDiagnose>
+                    <engineerTimeToRemediate>0</engineerTimeToRemediate>
+                    <ConstantVariables>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>system_name</name>
+                            <secure>false</secure>
+                            <variableID>464763</variableID>
+                            <value>&lt;![CDATA[unix_igaipat1]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsRandomPassword</name>
+                            <secure>true</secure>
+                            <variableID>464762</variableID>
+                            <value>&lt;![CDATA[MPjFKt8poZv2VoEks5quaw==]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>elementTypeAttributeId</name>
+                            <secure>false</secure>
+                            <variableID>464770</variableID>
+                            <value>&lt;![CDATA[0]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsStatus</name>
+                            <secure>false</secure>
+                            <variableID>464759</variableID>
+                            <value>&lt;![CDATA[1]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>elementId</name>
+                            <secure>false</secure>
+                            <variableID>464757</variableID>
+                            <value>&lt;![CDATA[0]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsUsername</name>
+                            <secure>false</secure>
+                            <variableID>464764</variableID>
+                            <value>&lt;![CDATA[dummy1]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsAction</name>
+                            <secure>false</secure>
+                            <variableID>464758</variableID>
+                            <value>&lt;![CDATA[get]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>folderId</name>
+                            <secure>false</secure>
+                            <variableID>464766</variableID>
+                            <value>&lt;![CDATA[0]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsFolderName</name>
+                            <secure>false</secure>
+                            <variableID>464765</variableID>
+                            <value>&lt;![CDATA[IBM]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>elementTypeId</name>
+                            <secure>false</secure>
+                            <variableID>464767</variableID>
+                            <value>&lt;![CDATA[0]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>elementName</name>
+                            <secure>false</secure>
+                            <variableID>464768</variableID>
+                            <value>&lt;![CDATA[tbd]]&gt;</value>
+                        </ConstantVariable>
+                        <ConstantVariable>
+                            <automatonID>40747</automatonID>
+                            <name>locksmithpassword</name>
+                            <secure>true</secure>
+                            <variableID>464769</variableID>
+                            <value>&lt;![CDATA[PZvRvFkJ+aZlogL3RWdIHQ==]]&gt;</value>
+                        </ConstantVariable>
+                    </ConstantVariables>
+                    <FormVariables/>
+                    <RegexExtractVariables/>
+                    <RuntimeVariables/>
+                    <ScriptExtractVariables>
+                        <ScriptExtractVariable>
+                            <automatonID>40747</automatonID>
+                            <name>jsonBody</name>
+                            <secure>false</secure>
+                            <variableID>464761</variableID>
+                            <actionID>618239</actionID>
+                            <script>lastState.getStdout();</script>
+                        </ScriptExtractVariable>
+                        <ScriptExtractVariable>
+                            <automatonID>40747</automatonID>
+                            <name>lsPassword</name>
+                            <secure>true</secure>
+                            <variableID>464760</variableID>
+                            <actionID>618237</actionID>
+                            <script>var element = eval('(' + lastState.getStdout() + ')');
+element.value;</script>
+                        </ScriptExtractVariable>
+                    </ScriptExtractVariables>
+                    <Connections/>
+                    <CMDBAssociateActions/>
+                    <CMDBQueryActions/>
+                    <EditVariableActions>
+                        <EditVariableAction>
+                            <actionID>618236</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs/>
+                            <stateID>743096</stateID>
+                            <refresh>false</refresh>
+                            <script>'0'</script>
+                            <EditVariableTransforms/>
+                            <variableID>464759</variableID>
+                        </EditVariableAction>
+                    </EditVariableActions>
+                    <EmailActions>
+                        <EmailAction>
+                            <actionID>618234</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs/>
+                            <stateID>743092</stateID>
+                            <body>${locksmithpassword}
+${lsAction}
+${lsStatus}
+${lsUsername}
+${lsFolderName}
+${elementId}
+${elementName}
+${elementTypeId}
+${elementTypeAttributeId}
+${folderId}
+${lsRandomPassword}
+</body>
+                            <from>nobody@ipsoft.com</from>
+                            <subject>subject</subject>
+                            <to>nobody@ipsoft.com</to>
+                        </EmailAction>
+                    </EmailActions>
+                    <FormActions/>
+                    <HostCommandActions/>
+                    <LinkActions/>
+                    <LockTicketActions/>
+                    <RfcActions/>
+                    <ScriptActions>
+                        <ScriptAction>
+                            <actionID>618238</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs/>
+                            <stateID>743093</stateID>
+                            <script>importPackage(net.ipsoft.ipcenter.framework.velocity);
+function setVar (name, value) {
+    execution.getExecutionVariableForScope(name, executionPointer.getCurrentScope()).setValue(value);
+}
+
+var element=eval('('+jsonBody+')');
+var elementId=0;
+var folderId=0;
+var elementTypeId=0;
+var elementTypeAttributeId=0;
+var k;
+
+for(var i=0;i&lt;element.data.length; i++)
+{
+    if(element.data[i].attributes)
+    {
+        for(var j=0; j &lt; element.data[i].attributes.length; j++)
+        {
+            if(element.data[i].attributes[j].name=='Username'
+            &amp;&amp; element.data[i].attributes[j].value==lsUsername
+            &amp;&amp; element.data[i].folder.name==lsFolderName
+            )
+            {
+                elementId=element.data[i].id;
+                elementName=element.data[i].name;
+                elementTypeId=element.data[i].elementTypeId;
+                folderId=element.data[i].folder.id;
+                k=i;
+                break;
+            }            
+        }
+    }
+}
+if(elementId &gt; 0)
+{
+    for(var j=0; j &lt; element.data[k].attributes.length; j++)
+    {
+        if(element.data[k].attributes[j].name=='Password')
+        {
+            elementTypeAttributeId=element.data[k].attributes[j].elementTypeAttributeId;
+        }
+    }
+   setVar('elementId',elementId);
+   setVar('folderId',folderId);
+   setVar('elementTypeId',elementTypeId);
+   setVar('elementTypeAttributeId',elementTypeAttributeId);
+   setVar('elementName',elementName);
+}</script>
+                        </ScriptAction>
+                    </ScriptActions>
+                    <WaitForRecoveryIPmonActions/>
+                    <GenericTicketEventWaitActions/>
+                    <AckProblemIPmonActions/>
+                    <CancelDowntimeIPmonActions/>
+                    <ExecuteCheckIPmonActions/>
+                    <ScheduleDowntimeIPmonActions/>
+                    <PhoneCallActions/>
+                    <TimedWaitActions/>
+                    <UpdateTicketActions/>
+                    <SubmitPassiveIPmonActionDetails/>
+                    <HttpRequestActions>
+                        <HttpRequestAction>
+                            <actionID>618235</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs/>
+                            <stateID>743097</stateID>
+                            <authPassword>${locksmithpassword}</authPassword>
+                            <authSecurePassword>false</authSecurePassword>
+                            <authType>BASIC</authType>
+                            <authUsername>ipautomata</authUsername>
+                            <authentication>true</authentication>
+                            <requestBody>{"elementTypeId":${elementTypeId},"attributes":[{"elementTypeAttributeId":"${elementTypeAttributeId}","value":"${lsRandomPassword}"}],"name":"${elementName}","id":"${elementId}"}</requestBody>
+                            <requestType>POST_XML</requestType>
+                            <responseType>HTML</responseType>
+                            <secureStdErr>true</secureStdErr>
+                            <secureStdOut>true</secureStdOut>
+                            <timeoutSeconds>0</timeoutSeconds>
+                            <url>https://api-ipctrprodmel.ipctrmel02.com/IPlocksmith/v1/folders/${folderId}/elements/${elementId}</url>
+                        </HttpRequestAction>
+                        <HttpRequestAction>
+                            <actionID>618237</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs>
+<ScriptExtractVariableID>464760</ScriptExtractVariableID>
+                            </ScriptExtractVariableIDs>
+                            <stateID>743095</stateID>
+                            <authPassword>${locksmithpassword}</authPassword>
+                            <authSecurePassword>false</authSecurePassword>
+                            <authType>BASIC</authType>
+                            <authUsername>ipautomata</authUsername>
+                            <authentication>true</authentication>
+                            <requestType>GET</requestType>
+                            <responseType>HTML</responseType>
+                            <secureStdErr>true</secureStdErr>
+                            <secureStdOut>true</secureStdOut>
+                            <timeoutSeconds>0</timeoutSeconds>
+                            <url>https://api-ipctrprodmel.ipctrmel02.com/IPlocksmith/v1/elements/${elementId}/Password</url>
+                        </HttpRequestAction>
+                        <HttpRequestAction>
+                            <actionID>618239</actionID>
+                            <RegexExtractVariableIDs/>
+                            <ScriptExtractVariableIDs>
+<ScriptExtractVariableID>464761</ScriptExtractVariableID>
+                            </ScriptExtractVariableIDs>
+                            <stateID>743090</stateID>
+                            <authPassword>${locksmithpassword}</authPassword>
+                            <authSecurePassword>false</authSecurePassword>
+                            <authType>BASIC</authType>
+                            <authUsername>ipautomata</authUsername>
+                            <authentication>true</authentication>
+                            <requestType>GET</requestType>
+                            <responseType>HTML</responseType>
+                            <secureStdErr>false</secureStdErr>
+                            <secureStdOut>false</secureStdOut>
+                            <timeoutSeconds>0</timeoutSeconds>
+                            <url>https://api-ipctrprodmel.ipctrmel02.com/IPlocksmith/v1/elements?elementTypeId=2&amp;attributes0name=Username&amp;attributes0value=${lsUsername}&amp;attributes1name=System&amp;attributes1value=${system_name}</url>
+                        </HttpRequestAction>
+                    </HttpRequestActions>
+                    <IPdiscoverActions/>
+                    <ExecuteIPadminActions/>
+                    <SQLCommandActions/>
+                    <NotifyActions/>
+                    <ForkStates/>
+                    <FormStates/>
+                    <JoinStates/>
+                    <LinkStates/>
+                    <NoopStates>
+                        <NoopState>
+                            <name>Action ?</name>
+                            <originalID>38792</originalID>
+                            <stateID>743094</stateID>
+                            <XPos>287</XPos>
+                            <YPos>507</YPos>
+                        </NoopState>
+                        <NoopState>
+                            <name>Noop</name>
+                            <originalID>6257</originalID>
+                            <stateID>743091</stateID>
+                            <XPos>293</XPos>
+                            <YPos>129</YPos>
+                        </NoopState>
+                    </NoopStates>
+                    <NormalStates>
+                        <NormalState>
+                            <actionID>618235</actionID>
+                            <name>Update Password</name>
+                            <originalID>1397</originalID>
+                            <stateID>743097</stateID>
+                            <XPos>289</XPos>
+                            <YPos>643</YPos>
+                        </NormalState>
+                        <NormalState>
+                            <actionID>618234</actionID>
+                            <name>Set Vars</name>
+                            <originalID>1400</originalID>
+                            <stateID>743092</stateID>
+                            <XPos>133</XPos>
+                            <YPos>129</YPos>
+                        </NormalState>
+                        <NormalState>
+                            <actionID>618237</actionID>
+                            <name>Retrieve Password</name>
+                            <originalID>1398</originalID>
+                            <stateID>743095</stateID>
+                            <XPos>465</XPos>
+                            <YPos>507</YPos>
+                        </NormalState>
+                        <NormalState>
+                            <actionID>618239</actionID>
+                            <name>Locksmith Lookup</name>
+                            <originalID>1398</originalID>
+                            <stateID>743090</stateID>
+                            <XPos>290</XPos>
+                            <YPos>258</YPos>
+                        </NormalState>
+                        <NormalState>
+                            <actionID>618236</actionID>
+                            <name>Set Status</name>
+                            <originalID>38570</originalID>
+                            <stateID>743096</stateID>
+                            <XPos>464</XPos>
+                            <YPos>643</YPos>
+                        </NormalState>
+                        <NormalState>
+                            <actionID>618238</actionID>
+                            <name>Extract Information</name>
+                            <originalID>38278</originalID>
+                            <stateID>743093</stateID>
+                            <XPos>289</XPos>
+                            <YPos>376</YPos>
+                        </NormalState>
+                    </NormalStates>
+                    <SuccessStates>
+                        <SuccessState>
+                            <name>Error 404 - User is not found</name>
+                            <originalID>38555</originalID>
+                            <stateID>743099</stateID>
+                            <XPos>467</XPos>
+                            <YPos>376</YPos>
+                        </SuccessState>
+                        <SuccessState>
+                            <name>Success</name>
+                            <originalID>6259</originalID>
+                            <stateID>743098</stateID>
+                            <XPos>628</XPos>
+                            <YPos>643</YPos>
+                        </SuccessState>
+                    </SuccessStates>
+                    <WaitStates/>
+                    <Transitions>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>VARIABLE</evaluatorType>
+<expression>0</expression>
+<negate>false</negate>
+<variableID>464757</variableID>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>311,376:321,376:321,376:321,376:435,376:445,376</connectorLayout>
+                            <fromStateID>743093</fromStateID>
+                            <labelLayout>0:-1:3:53</labelLayout>
+                            <name>!found</name>
+                            <toStateID>743099</toStateID>
+                            <transitionID>835644</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>VARIABLE</evaluatorType>
+<expression>get</expression>
+<negate>false</negate>
+<variableID>464758</variableID>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>310,507:320,507:320,507:320,507:433,507:443,507</connectorLayout>
+                            <fromStateID>743094</fromStateID>
+                            <labelLayout>0:0:4:60</labelLayout>
+                            <name>get</name>
+                            <toStateID>743095</toStateID>
+                            <transitionID>835642</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>OUTPUT</evaluatorType>
+<expression>0</expression>
+<negate>false</negate>
+<outputField>RET</outputField>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>312,643:322,643:322,643:322,643:432,643:442,643</connectorLayout>
+                            <fromStateID>743097</fromStateID>
+                            <labelLayout>0:-2:5:43</labelLayout>
+                            <name>rc=0</name>
+                            <toStateID>743096</toStateID>
+                            <transitionID>835639</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>VARIABLE</evaluatorType>
+<expression>0</expression>
+<negate>true</negate>
+<variableID>464757</variableID>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>289,392:289,402:288,402:288,402:288,481:288,491</connectorLayout>
+                            <fromStateID>743093</fromStateID>
+                            <labelLayout>-2:0:3:49</labelLayout>
+                            <name>found</name>
+                            <toStateID>743094</toStateID>
+                            <transitionID>835643</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>VARIABLE</evaluatorType>
+<expression>set</expression>
+<negate>false</negate>
+<variableID>464758</variableID>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>287,523:287,533:288,533:288,533:288,618:288,628</connectorLayout>
+                            <fromStateID>743094</fromStateID>
+                            <labelLayout>-2:0:3:51</labelLayout>
+                            <name>set</name>
+                            <toStateID>743097</toStateID>
+                            <transitionID>835638</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>OUTPUT</evaluatorType>
+<expression>0</expression>
+<negate>false</negate>
+<outputField>RET</outputField>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>465,523:465,533:464,533:464,533:464,618:464,628</connectorLayout>
+                            <fromStateID>743095</fromStateID>
+                            <labelLayout>-1:0:3:53</labelLayout>
+                            <name>rc=0</name>
+                            <toStateID>743096</toStateID>
+                            <transitionID>835641</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>ALWAYS</evaluatorType>
+<negate>true</negate>
+<outputField>RET</outputField>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>271,129:261,129:261,129:261,129:165,129:155,129</connectorLayout>
+                            <fromStateID>743091</fromStateID>
+                            <labelLayout>0:0:3:50</labelLayout>
+                            <name>NEVER</name>
+                            <toStateID>743092</toStateID>
+                            <transitionID>835636</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>OUTPUT</evaluatorType>
+<expression>0</expression>
+<negate>false</negate>
+<outputField>RET</outputField>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>486,643:496,643:496,643:496,643:597,643:607,643</connectorLayout>
+                            <fromStateID>743096</fromStateID>
+                            <labelLayout>2:0:3:54</labelLayout>
+                            <name>rc=0</name>
+                            <toStateID>743098</toStateID>
+                            <transitionID>835640</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>OUTPUT</evaluatorType>
+<expression>0</expression>
+<negate>false</negate>
+<outputField>RET</outputField>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>289,273:289,283:289,283:289,283:289,351:289,361</connectorLayout>
+                            <fromStateID>743090</fromStateID>
+                            <labelLayout>0:0:3:50</labelLayout>
+                            <name>rc=0</name>
+                            <toStateID>743093</toStateID>
+                            <transitionID>835645</transitionID>
+                        </Transition>
+                        <Transition>
+                            <transitionEvaluator>
+<completeMatch>true</completeMatch>
+<evaluatorType>ALWAYS</evaluatorType>
+<expression></expression>
+<negate>false</negate>
+<weight>1</weight>
+                            </transitionEvaluator>
+                            <connectorLayout>293,145:293,155:290,155:290,155:290,231:290,241</connectorLayout>
+                            <fromStateID>743091</fromStateID>
+                            <labelLayout>0:0:3:50</labelLayout>
+                            <name>ALWAYS</name>
+                            <toStateID>743090</toStateID>
+                            <transitionID>835637</transitionID>
+                        </Transition>
+                    </Transitions>
+                    <TicketMatchers/>
+                    <Tags/>
+                </automaton>
+                <automatonID>40747</automatonID>
+            </LinkAction>
+        </LinkActions>
+        <LockTicketActions/>
+        <RfcActions/>
+        <ScriptActions/>
+        <WaitForRecoveryIPmonActions/>
+        <GenericTicketEventWaitActions/>
+        <AckProblemIPmonActions/>
+        <CancelDowntimeIPmonActions/>
+        <ExecuteCheckIPmonActions/>
+        <ScheduleDowntimeIPmonActions/>
+        <PhoneCallActions/>
+        <TimedWaitActions/>
+        <UpdateTicketActions/>
+        <SubmitPassiveIPmonActionDetails/>
+        <HttpRequestActions/>
+        <IPdiscoverActions/>
+        <ExecuteIPadminActions/>
+        <SQLCommandActions/>
+        <NotifyActions/>
+        <ForkStates/>
+        <FormStates/>
+        <JoinStates/>
+        <LinkStates>
+            <LinkState>
+                <actionID>310813</actionID>
+                <name>Retrieve Passphrase</name>
+                <originalID>11430</originalID>
+                <stateID>377144</stateID>
+                <XPos>709</XPos>
+                <YPos>51</YPos>
+            </LinkState>
+        </LinkStates>
+        <NoopStates>
+            <NoopState>
+                <name>Begin</name>
+                <originalID>267876</originalID>
+                <stateID>377146</stateID>
+                <XPos>248</XPos>
+                <YPos>50</YPos>
+            </NoopState>
+            <NoopState>
+                <name>Noop</name>
+                <originalID>241032</originalID>
+                <stateID>377161</stateID>
+                <XPos>400</XPos>
+                <YPos>1052</YPos>
+            </NoopState>
+        </NoopStates>
+        <NormalStates>
+            <NormalState>
+                <actionID>310824</actionID>
+                <name>uptime-red</name>
+                <originalID>151548</originalID>
+                <stateID>377166</stateID>
+                <XPos>406</XPos>
+                <YPos>1158</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310816</actionID>
+                <name>Error</name>
+                <originalID>11328</originalID>
+                <stateID>377154</stateID>
+                <XPos>625</XPos>
+                <YPos>423</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310823</actionID>
+                <name>uptime_check-Show Version</name>
+                <originalID>151544</originalID>
+                <stateID>377158</stateID>
+                <XPos>213</XPos>
+                <YPos>840</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310811</actionID>
+                <name>Declare Variables</name>
+                <originalID>268701</originalID>
+                <stateID>377147</stateID>
+                <XPos>88</XPos>
+                <YPos>50</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310832</actionID>
+                <name>enable</name>
+                <originalID>214943</originalID>
+                <stateID>377155</stateID>
+                <XPos>513</XPos>
+                <YPos>653</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310830</actionID>
+                <name>term len 0</name>
+                <originalID>241390</originalID>
+                <stateID>377157</stateID>
+                <XPos>398</XPos>
+                <YPos>839</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310820</actionID>
+                <name>hostname</name>
+                <originalID>293357</originalID>
+                <stateID>377143</stateID>
+                <XPos>708</XPos>
+                <YPos>190</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310825</actionID>
+                <name>red-count</name>
+                <originalID>161010</originalID>
+                <stateID>377165</stateID>
+                <XPos>405</XPos>
+                <YPos>1259</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310815</actionID>
+                <name>Send Failure Email - could not login</name>
+                <originalID>46436</originalID>
+                <stateID>377151</stateID>
+                <XPos>343</XPos>
+                <YPos>537</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310819</actionID>
+                <name>Error</name>
+                <originalID>11328</originalID>
+                <stateID>377148</stateID>
+                <XPos>622</XPos>
+                <YPos>319</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310828</actionID>
+                <name>chomp uptime</name>
+                <originalID>241033</originalID>
+                <stateID>377160</stateID>
+                <XPos>406</XPos>
+                <YPos>941</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310822</actionID>
+                <name>ssh to affected host</name>
+                <notes>192.168.77.94 
+working command: ssh -o StrictHostKeyChecking=no watcharinw@${myhost_aff}
+====
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l watcharinw  ${myhost_aff}</notes>
+                <originalID>846</originalID>
+                <stateID>377141</stateID>
+                <XPos>787</XPos>
+                <YPos>422</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310817</actionID>
+                <name>Send Failure Email - in JB1 but cannot get to affected_host</name>
+                <originalID>46436</originalID>
+                <stateID>377153</stateID>
+                <XPos>342</XPos>
+                <YPos>422</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310831</actionID>
+                <name>enter pwd for enable</name>
+                <originalID>214955</originalID>
+                <stateID>377156</stateID>
+                <XPos>307</XPos>
+                <YPos>651</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310829</actionID>
+                <name>chomp return type</name>
+                <originalID>242103</originalID>
+                <stateID>377159</stateID>
+                <XPos>213</XPos>
+                <YPos>942</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310826</actionID>
+                <name>green-count</name>
+                <originalID>161009</originalID>
+                <stateID>377163</stateID>
+                <XPos>608</XPos>
+                <YPos>1147</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310833</actionID>
+                <name>enterpswd</name>
+                <originalID>848</originalID>
+                <stateID>377140</stateID>
+                <XPos>788</XPos>
+                <YPos>538</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310821</actionID>
+                <name>set affected_host</name>
+                <originalID>242291</originalID>
+                <stateID>377142</stateID>
+                <XPos>851</XPos>
+                <YPos>190</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310818</actionID>
+                <name>Send Failure Email - cannot get to IPcenter Jumpbox</name>
+                <originalID>46436</originalID>
+                <stateID>377149</stateID>
+                <XPos>342</XPos>
+                <YPos>319</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310812</actionID>
+                <name>Setup Connect Error</name>
+                <originalID>15389</originalID>
+                <stateID>377145</stateID>
+                <XPos>405</XPos>
+                <YPos>51</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310814</actionID>
+                <name>Error</name>
+                <originalID>11328</originalID>
+                <stateID>377152</stateID>
+                <XPos>624</XPos>
+                <YPos>537</YPos>
+            </NormalState>
+            <NormalState>
+                <actionID>310827</actionID>
+                <name>uptime-green</name>
+                <originalID>151543</originalID>
+                <stateID>377162</stateID>
+                <XPos>614</XPos>
+                <YPos>1052</YPos>
+            </NormalState>
+        </NormalStates>
+        <SuccessStates>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>153295</originalID>
+                <stateID>377164</stateID>
+                <XPos>608</XPos>
+                <YPos>1259</YPos>
+            </SuccessState>
+            <SuccessState>
+                <name>Success</name>
+                <originalID>850</originalID>
+                <stateID>377150</stateID>
+                <XPos>90</XPos>
+                <YPos>656</YPos>
+            </SuccessState>
+        </SuccessStates>
+        <WaitStates/>
+        <Transitions>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>271,50:281,50:281,50:281,50:373,50:383,50</connectorLayout>
+                <fromStateID>377146</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ALWAYS</name>
+                <toStateID>377145</toStateID>
+                <transitionID>422292</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>BOOLEAN_EXPRESSION</evaluatorType>
+                    <expression>${uptime_out_switch} &lt; 30</expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>400,1068:400,1078:407,1078:407,1078:407,1133:407,1143</connectorLayout>
+                <fromStateID>377161</fromStateID>
+                <labelLayout>5:0:3:55</labelLayout>
+                <name>uptimecheck-red</name>
+                <toStateID>377166</toStateID>
+                <transitionID>422309</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <expression></expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>342,335:342,345:342,355:342,355:342,365:89,365:89,629:89,639</connectorLayout>
+                <fromStateID>377149</fromStateID>
+                <labelLayout>0:-20:3:42</labelLayout>
+                <name>ok</name>
+                <toStateID>377150</toStateID>
+                <transitionID>422301</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>(\Q#\E|\Q&gt;\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>376,839:366,839:355,839:355,840:246,840:236,840</connectorLayout>
+                <fromStateID>377157</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377158</toStateID>
+                <transitionID>422318</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>731,190:741,190:755,190:755,189:819,189:829,189</connectorLayout>
+                <fromStateID>377143</fromStateID>
+                <labelLayout>5:0:5:50</labelLayout>
+                <name>OK</name>
+                <toStateID>377142</toStateID>
+                <transitionID>422304</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>assword</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>491,653:481,653:481,651:481,651:340,651:330,651</connectorLayout>
+                <fromStateID>377155</fromStateID>
+                <labelLayout>2:0:3:49</labelLayout>
+                <name>asked for pwd-for fw's</name>
+                <toStateID>377156</toStateID>
+                <transitionID>422320</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>321,537:311,537:315,537:315,537:225,537:225,656:123,656:113,656</connectorLayout>
+                <fromStateID>377151</fromStateID>
+                <labelLayout>0:-20:1:80</labelLayout>
+                <name>ok</name>
+                <toStateID>377150</toStateID>
+                <transitionID>422297</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>BOOLEAN_EXPRESSION</evaluatorType>
+                    <expression>${uptime_out_switch} &gt; 30</expression>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>423,1052:433,1052:433,1052:433,1052:582,1052:592,1052</connectorLayout>
+                <fromStateID>377161</fromStateID>
+                <labelLayout>0:-1:3:57</labelLayout>
+                <name>uptimecheck</name>
+                <toStateID>377162</toStateID>
+                <transitionID>422314</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>\d+</expression>
+                    <negate>false</negate>
+                    <variableID>235307</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>406,957:406,967:400,967:400,967:400,1026:400,1036</connectorLayout>
+                <fromStateID>377160</fromStateID>
+                <labelLayout>1:0:3:58</labelLayout>
+                <name>ok</name>
+                <toStateID>377161</toStateID>
+                <transitionID>422315</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>427,51:437,51:435,51:435,51:475,51:475,25:625,25:625,51:677,51:687,51</connectorLayout>
+                <fromStateID>377145</fromStateID>
+                <labelLayout>0:5:3:43</labelLayout>
+                <name>Ret=0</name>
+                <toStateID>377144</toStateID>
+                <transitionID>422293</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>766,538:756,538:745,538:745,654:547,654:537,654</connectorLayout>
+                <fromStateID>377140</fromStateID>
+                <labelLayout>0:9:3:23</labelLayout>
+                <name>all good</name>
+                <toStateID>377155</toStateID>
+                <transitionID>422321</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>assword</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>765,422:755,422:755,423:755,423:657,423:647,423</connectorLayout>
+                <fromStateID>377141</fromStateID>
+                <labelLayout>0:-45:5:80</labelLayout>
+                <name>did not ask for password</name>
+                <toStateID>377154</toStateID>
+                <transitionID>422298</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>608,1163:608,1173:608,1173:608,1173:608,1232:608,1242</connectorLayout>
+                <fromStateID>377163</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377164</toStateID>
+                <transitionID>422312</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>602,537:592,537:484,537:484,537:376,537:366,537</connectorLayout>
+                <fromStateID>377152</fromStateID>
+                <labelLayout>0:-16:3:3</labelLayout>
+                <name>ok</name>
+                <toStateID>377151</toStateID>
+                <transitionID>422296</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>true</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>226,50:216,50:216,50:216,50:121,50:111,50</connectorLayout>
+                <fromStateID>377146</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>Never</name>
+                <toStateID>377147</toStateID>
+                <transitionID>422291</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>407,1174:407,1184:405,1184:405,1184:405,1234:405,1244</connectorLayout>
+                <fromStateID>377166</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377165</toStateID>
+                <transitionID>422310</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0|-729</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>213,856:213,866:213,866:213,866:213,916:213,926</connectorLayout>
+                <fromStateID>377158</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377159</toStateID>
+                <transitionID>422317</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>235,941:245,941:245,941:245,941:374,941:384,941</connectorLayout>
+                <fromStateID>377159</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377160</toStateID>
+                <transitionID>422316</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>427,1259:437,1259:437,1258:437,1258:576,1258:586,1258</connectorLayout>
+                <fromStateID>377165</fromStateID>
+                <labelLayout>0:1:3:42</labelLayout>
+                <name>not ok</name>
+                <toStateID>377164</toStateID>
+                <transitionID>422311</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>assword</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>513,669:513,679:513,675:513,675:513,695:398,695:398,813:398,823</connectorLayout>
+                <fromStateID>377155</fromStateID>
+                <labelLayout>0:7:4:7</labelLayout>
+                <name>ok</name>
+                <toStateID>377157</toStateID>
+                <transitionID>422307</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>320,422:310,422:301,422:301,422:151,422:151,655:122,655:112,655</connectorLayout>
+                <fromStateID>377153</fromStateID>
+                <labelLayout>0:-18:1:75</labelLayout>
+                <name>ok</name>
+                <toStateID>377150</toStateID>
+                <transitionID>422300</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>true</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>708,206:708,216:708,225:708,225:708,235:622,235:622,293:622,303</connectorLayout>
+                <fromStateID>377143</fromStateID>
+                <labelLayout>15:0:5:37</labelLayout>
+                <name>no JUMPBOX mesg</name>
+                <toStateID>377148</toStateID>
+                <transitionID>422303</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>603,423:593,423:593,422:593,422:375,422:365,422</connectorLayout>
+                <fromStateID>377154</fromStateID>
+                <labelLayout>0:-16:3:53</labelLayout>
+                <name>ok</name>
+                <toStateID>377153</toStateID>
+                <transitionID>422299</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>851,205:851,215:851,225:851,225:851,235:787,235:787,396:787,406</connectorLayout>
+                <fromStateID>377142</fromStateID>
+                <labelLayout>0:0:5:24</labelLayout>
+                <name>ok</name>
+                <toStateID>377141</toStateID>
+                <transitionID>422305</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>615,1068:615,1078:615,1085:615,1085:615,1095:608,1095:608,1122:608,1132</connectorLayout>
+                <fromStateID>377162</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377163</toStateID>
+                <transitionID>422313</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>0</expression>
+                    <negate>false</negate>
+                    <outputField>RET</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>600,319:590,319:590,318:590,318:375,318:365,318</connectorLayout>
+                <fromStateID>377148</fromStateID>
+                <labelLayout>0:-18:3:53</labelLayout>
+                <name>ok</name>
+                <toStateID>377149</toStateID>
+                <transitionID>422302</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>assword</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>787,438:787,448:787,448:787,448:787,511:787,521</connectorLayout>
+                <fromStateID>377141</fromStateID>
+                <labelLayout>0:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377140</toStateID>
+                <transitionID>422306</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E)</expression>
+                    <negate>true</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>766,538:756,538:756,536:756,536:656,536:646,536</connectorLayout>
+                <fromStateID>377140</fromStateID>
+                <labelLayout>0:-35:3:77</labelLayout>
+                <name>still asking password</name>
+                <toStateID>377152</toStateID>
+                <transitionID>422295</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>VARIABLE</evaluatorType>
+                    <expression>\d+</expression>
+                    <negate>true</negate>
+                    <variableID>235307</variableID>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>428,941:438,941:566,941:566,1052:582,1052:592,1052</connectorLayout>
+                <fromStateID>377160</fromStateID>
+                <labelLayout>15:0:2:26</labelLayout>
+                <name>uptime-greater than minutes</name>
+                <toStateID>377162</toStateID>
+                <transitionID>422308</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>false</completeMatch>
+                    <evaluatorType>OUTPUT</evaluatorType>
+                    <expression>.*(\Q#\E|\Q&gt;\E)</expression>
+                    <negate>false</negate>
+                    <outputField>OUT</outputField>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>307,667:307,677:307,685:307,685:307,695:398,695:398,813:398,823</connectorLayout>
+                <fromStateID>377156</fromStateID>
+                <labelLayout>0:13:4:38</labelLayout>
+                <name>ok</name>
+                <toStateID>377157</toStateID>
+                <transitionID>422319</transitionID>
+            </Transition>
+            <Transition>
+                <transitionEvaluator>
+                    <completeMatch>true</completeMatch>
+                    <evaluatorType>ALWAYS</evaluatorType>
+                    <negate>false</negate>
+                    <weight>1</weight>
+                </transitionEvaluator>
+                <connectorLayout>709,66:709,76:708,76:708,76:708,164:708,174</connectorLayout>
+                <fromStateID>377144</fromStateID>
+                <labelLayout>-21:0:3:50</labelLayout>
+                <name>ok</name>
+                <toStateID>377143</toStateID>
+                <transitionID>422294</transitionID>
+            </Transition>
+        </Transitions>
+        <TicketMatchers/>
+        <Tags/>
+    </automaton>
+    <timeOfExport>2017-06-28T07:39:10.520Z</timeOfExport>
+</automatonExport>
